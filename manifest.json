@@ -1,0 +1,27 @@
+{
+  "name": "Mavis chúc bạn ngủ ngon",
+  "short_name": "Mavis Ngủ Ngon",
+  "description": "Bạn ngủ ngon, Mavis hạnh phúc. Trợ lý AI chẩn đoán 5 trụ cột y khoa và tối ưu nhịp sinh học giấc ngủ.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0B0F19",
+  "theme_color": "#0F172A",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["health", "medical", "lifestyle"],
+  "screenshots": []
+}

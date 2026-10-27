@@ -1,0 +1,3734 @@
+{
+  "users": [
+    {
+      "id": "user_1793088084",
+      "fullName": "bé liêm",
+      "phone": "9876544321",
+      "email": "",
+      "password": "beliemdeptrai",
+      "role": "culi",
+      "bio": "Mục tiêu cải thiện chất lượng giấc ngủ sâu NREM 💤",
+      "age": "21",
+      "gender": "Khác",
+      "occupation": "culi",
+      "targetBedtime": "12:00",
+      "wakeTime": "06:30",
+      "fitnessLevel": "Trung bình",
+      "healthConditions": [
+        "Sức khỏe ổn định"
+      ],
+      "avatarType": "programmer_laptop",
+      "verified": true,
+      "streakDays": 1,
+      "createdAt": "2026-10-27T15:01:24.283924",
+      "lastLoginAt": "2026-10-27T15:02:43.798268"
+    },
+    {
+      "id": "user_1793021981",
+      "fullName": "Thắm",
+      "phone": "123456789",
+      "email": "",
+      "password": "250224",
+      "role": "sinh viên",
+      "bio": "Mục tiêu cải thiện chất lượng giấc ngủ sâu NREM 💤",
+      "age": "22",
+      "gender": "Khác",
+      "occupation": "sinh viên",
+      "targetBedtime": "23:00",
+      "wakeTime": "06:30",
+      "fitnessLevel": "Trung bình",
+      "healthConditions": [
+        "Sức khỏe ổn định"
+      ],
+      "avatarType": "programmer_laptop",
+      "verified": true,
+      "streakDays": 1,
+      "createdAt": "2026-10-26T20:39:41.060888",
+      "lastLoginAt": "2026-10-27T03:12:29.603Z"
+    },
+    {
+      "id": "user_1792946194",
+      "fullName": "Nguyễn Hoàng Hiếu Liêm",
+      "phone": "0762880421",
+      "email": "",
+      "password": "Bedang2005##",
+      "role": "IT",
+      "bio": "Mục tiêu cải thiện chất lượng giấc ngủ sâu NREM 💤",
+      "age": "21",
+      "gender": "Khác",
+      "occupation": "IT",
+      "targetBedtime": "12:00",
+      "wakeTime": "06:30",
+      "fitnessLevel": "Trung bình",
+      "healthConditions": [
+        "Đau mỏi cổ vai gáy",
+        "Căng thẳng deadline",
+        "Ngồi nhiều máy tính",
+        "Khó ngủ sau 1h sáng"
+      ],
+      "avatarType": "woman_professional",
+      "verified": true,
+      "streakDays": 1,
+      "createdAt": "2026-10-25T23:36:34.428326",
+      "lastLoginAt": "2026-10-27T13:08:09.720662"
+    }
+  ],
+  "activeUserId": "user_1792946194",
+  "serviceUsage": [
+    {
+      "id": 1792943916098,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm (SĐT/ID: 0762880421) đã đăng nhập thành công vào hệ thống.",
+      "device": "Điện thoại (iPhone) • iOS 18.7 • Safari 27",
+      "metadata": {
+        "action": "LOGIN",
+        "loginAt": "2026-10-27T15:59:00.812641",
+        "phone": "0762880421",
+        "role": "IT",
+        "ip": "2001:ee0:d780:5e70:f4df:3e82:a700:5c65",
+        "mac": "DEV-6C:E6:CE:12",
+        "device": "Điện thoại (iPhone) • iOS 18.7 • Safari 27",
+        "deviceType": "Điện thoại (iPhone)",
+        "os": "iOS 18.7",
+        "browser": "Safari 27",
+        "screen": "440x956",
+        "userAgent": "Mozilla/5.0 (iPhone; CPU iPhone OS 18_7 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/27.0.1 Mobile/15E148 Safari/604.1"
+      },
+      "timestamp": "2026-10-27T15:59:00.821715"
+    },
+    {
+      "id": 1792943916097,
+      "userId": "user_1793088084",
+      "userName": "bé liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng bé liêm (SĐT/ID: 9876544321) đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "action": "LOGIN",
+        "loginAt": "2026-10-27T15:04:35.829526",
+        "phone": "9876544321",
+        "role": "culi",
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-B0:0E:51:33",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T15:04:35.838538"
+    },
+    {
+      "id": 1792943916096,
+      "userId": "user_1793088084",
+      "userName": "bé liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng bé liêm (SĐT/ID: 9876544321) đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "action": "LOGIN",
+        "loginAt": "2026-10-27T15:02:43.798268",
+        "phone": "9876544321",
+        "role": "culi",
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-B0:0E:51:33",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T15:02:43.806272"
+    },
+    {
+      "id": 1792943916094,
+      "userId": "user_1793088084",
+      "userName": "bé liêm",
+      "serviceType": "AUTH_REGISTER",
+      "title": "Đăng ký thành viên mới",
+      "detail": "Thành viên mới bé liêm (SĐT: 9876544321 - Nghề: culi) vừa tạo tài khoản và lưu vào SQL Database.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "action": "REGISTER",
+        "phone": "9876544321",
+        "age": "21",
+        "occupation": "culi",
+        "targetBedtime": "12:00",
+        "wakeTime": "06:30",
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-B0:0E:51:33",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T15:01:24.293925"
+    },
+    {
+      "id": 1792943916092,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm (SĐT/ID: 0762880421) đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "action": "LOGIN",
+        "loginAt": "2026-10-27T13:08:09.720662",
+        "phone": "0762880421",
+        "role": "IT",
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T13:08:09.731665"
+    },
+    {
+      "id": 1792943915091,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Điện thoại (Mobile) • iOS 17.5 • Safari Mobile (PWA)",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Điện thoại (Mobile)",
+        "os": "iOS 17.5",
+        "browser": "Safari Mobile (PWA)"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915192,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Điện thoại (Mobile) • iOS 17.5 • Safari Mobile (PWA)",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Điện thoại (Mobile)",
+        "os": "iOS 17.5",
+        "browser": "Safari Mobile (PWA)"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915242,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915243,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915292,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915293,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915294,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915295,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915342,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915343,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915344,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915345,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915346,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915347,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915348,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915349,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915392,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915393,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915394,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915395,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915396,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915397,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915398,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915399,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915400,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915401,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915402,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915403,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915404,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915405,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915406,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915407,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915442,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915443,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915444,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915445,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915446,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915447,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915448,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915449,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915450,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915451,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915452,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915453,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915454,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915455,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915456,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915457,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915458,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915459,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915460,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915461,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915462,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915463,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915464,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915465,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915466,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915467,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915468,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915469,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915470,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915471,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915472,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915473,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915492,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915493,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915494,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915495,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915496,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915497,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915498,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915499,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915500,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915501,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915502,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915503,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915504,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915505,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915506,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915507,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915508,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915509,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915510,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915511,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915512,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915513,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915514,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915515,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915516,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915517,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915518,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915519,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915520,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915521,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915522,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915523,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915524,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915525,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915526,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915527,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915528,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915529,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915530,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915531,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915532,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915533,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915534,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915535,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915536,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915537,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915538,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915539,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915540,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915541,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915542,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915543,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915544,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915545,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915546,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915547,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915548,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915549,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915550,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915551,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915552,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915553,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915554,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915555,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915556,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915557,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915558,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915559,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915560,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915561,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915562,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915563,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915564,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915565,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915566,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915567,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915568,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915569,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915570,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915571,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915572,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915573,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915574,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915575,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915576,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915577,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915578,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915579,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915580,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915581,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915582,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915583,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915584,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915585,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915586,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915587,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915588,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915589,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915590,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915591,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915592,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915593,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915594,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915595,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915596,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915597,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915598,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915599,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915600,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915601,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915602,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915603,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915604,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915605,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915606,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915607,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915608,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915609,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915610,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915611,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915612,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915613,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915614,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915615,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915616,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915617,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915618,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915619,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915620,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915621,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    },
+    {
+      "id": 1792943915622,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "serviceType": "AUTH_LOGIN",
+      "title": "Đăng nhập tài khoản",
+      "detail": "Người dùng Nguyễn Hoàng Hiếu Liêm đã đăng nhập thành công vào hệ thống.",
+      "device": "Máy tính (PC/Laptop) • Windows 10/11 • Google Chrome",
+      "metadata": {
+        "ip": "127.0.0.1 (Localhost)",
+        "mac": "DEV-FE:07:92:9C",
+        "deviceType": "Máy tính (PC/Laptop)",
+        "os": "Windows 10/11",
+        "browser": "Google Chrome"
+      },
+      "timestamp": "2026-10-27T12:20:06.621561"
+    }
+  ],
+  "diagnoses": [
+    {
+      "id": 1792946511402,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "score": 47,
+      "pillars": {
+        "p1_stress": 75,
+        "p2_env": 55,
+        "p3_lifestyle": 50,
+        "p4_physio": 15,
+        "p5_health": 45
+      },
+      "answers": {
+        "stress_level": [
+          "high"
+        ],
+        "mood_state": [
+          "good"
+        ],
+        "env_light": [
+          "screen_heavy"
+        ],
+        "env_temp": [
+          "ideal"
+        ],
+        "env_noise": [
+          "quiet"
+        ],
+        "caffeine_usage": [
+          "morning_only"
+        ],
+        "alcohol_nicotine": [
+          "none"
+        ],
+        "dinner_habit": [
+          "light_early"
+        ],
+        "bed_phone": [
+          "lướt_tiktok_fb"
+        ],
+        "age_group": [
+          "young_adult"
+        ],
+        "hormone_state": [
+          "normal"
+        ],
+        "physical_pain": [
+          "neck_back_pain"
+        ],
+        "chronic_condition": [
+          "none"
+        ]
+      },
+      "customAnswers": {},
+      "device": "Web Browser",
+      "timestamp": "2026-10-25T16:41:51.403Z"
+    },
+    {
+      "id": 1792946488792,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "score": 47,
+      "pillars": {
+        "p1_stress": 75,
+        "p2_env": 55,
+        "p3_lifestyle": 50,
+        "p4_physio": 15,
+        "p5_health": 45
+      },
+      "answers": {
+        "stress_level": [
+          "high"
+        ],
+        "mood_state": [
+          "good"
+        ],
+        "env_light": [
+          "screen_heavy"
+        ],
+        "env_temp": [
+          "ideal"
+        ],
+        "env_noise": [
+          "quiet"
+        ],
+        "caffeine_usage": [
+          "morning_only"
+        ],
+        "alcohol_nicotine": [
+          "none"
+        ],
+        "dinner_habit": [
+          "light_early"
+        ],
+        "bed_phone": [
+          "lướt_tiktok_fb"
+        ],
+        "age_group": [
+          "young_adult"
+        ],
+        "hormone_state": [
+          "normal"
+        ],
+        "physical_pain": [
+          "neck_back_pain"
+        ],
+        "chronic_condition": [
+          "none"
+        ]
+      },
+      "customAnswers": {},
+      "device": "Web Browser",
+      "timestamp": "2026-10-25T16:41:28.792Z"
+    },
+    {
+      "id": 1792946471265,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "score": 47,
+      "pillars": {
+        "p1_stress": 75,
+        "p2_env": 55,
+        "p3_lifestyle": 50,
+        "p4_physio": 15,
+        "p5_health": 45
+      },
+      "answers": {
+        "stress_level": [
+          "high"
+        ],
+        "mood_state": [
+          "good"
+        ],
+        "env_light": [
+          "screen_heavy"
+        ],
+        "env_temp": [
+          "ideal"
+        ],
+        "env_noise": [
+          "quiet"
+        ],
+        "caffeine_usage": [
+          "morning_only"
+        ],
+        "alcohol_nicotine": [
+          "none"
+        ],
+        "dinner_habit": [
+          "light_early"
+        ],
+        "bed_phone": [
+          "lướt_tiktok_fb"
+        ],
+        "age_group": [
+          "young_adult"
+        ],
+        "hormone_state": [
+          "normal"
+        ],
+        "physical_pain": [
+          "neck_back_pain"
+        ],
+        "chronic_condition": [
+          "none"
+        ]
+      },
+      "customAnswers": {},
+      "device": "Web Browser",
+      "timestamp": "2026-10-25T16:41:11.265Z"
+    },
+    {
+      "id": 1792946275164,
+      "userId": "user_1792946194",
+      "userName": "Nguyễn Hoàng Hiếu Liêm",
+      "score": 47,
+      "pillars": {
+        "p1_stress": 75,
+        "p2_env": 55,
+        "p3_lifestyle": 50,
+        "p4_physio": 15,
+        "p5_health": 45
+      },
+      "answers": {
+        "stress_level": [
+          "high"
+        ],
+        "mood_state": [
+          "good"
+        ],
+        "env_light": [
+          "screen_heavy"
+        ],
+        "env_temp": [
+          "ideal"
+        ],
+        "env_noise": [
+          "quiet"
+        ],
+        "caffeine_usage": [
+          "morning_only"
+        ],
+        "alcohol_nicotine": [
+          "none"
+        ],
+        "dinner_habit": [
+          "light_early"
+        ],
+        "bed_phone": [
+          "lướt_tiktok_fb"
+        ],
+        "age_group": [
+          "young_adult"
+        ],
+        "hormone_state": [
+          "normal"
+        ],
+        "physical_pain": [
+          "neck_back_pain"
+        ],
+        "chronic_condition": [
+          "none"
+        ]
+      },
+      "customAnswers": {},
+      "device": "Web Browser",
+      "timestamp": "2026-10-25T16:37:55.164Z"
+    }
+  ]
+}

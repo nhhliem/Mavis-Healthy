@@ -1,0 +1,11 @@
+.git
+.gitignore
+.env
+__pycache__
+*.pyc
+*.pyo
+*.pyd
+cloudflared.exe
+.DS_Store
+Thumbs.db
+node_modules

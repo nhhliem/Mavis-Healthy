@@ -1,0 +1,2413 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Mavis chúc bạn ngủ ngon">
+  <meta name="apple-touch-fullscreen" content="yes">
+  <title>Mavis chúc bạn ngủ ngon - Chẩn Đoán 5 Trụ Cột & Tối Ưu Giấc Ngủ Toàn Diện</title>
+  <meta name="description"
+    content="Mavis chúc bạn ngủ ngon - Bạn ngủ ngon, Mavis hạnh phúc. Hệ thống AI chẩn đoán 5 trụ cột y khoa ảnh hưởng giấc ngủ: Tâm lý, Môi trường, Lối sống, Nội tiết, Bệnh lý. Tự động quét lịch biểu và gợi ý vi-hành động thời gian thực.">
+
+  <!-- Google Fonts: Be Vietnam Pro -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,600&display=swap"
+    rel="stylesheet">
+
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- PWA & Mobile App Support -->
+  <link rel="manifest" href="manifest.json">
+  <meta name="theme-color" content="#0F172A">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="icon" type="image/png" href="assets/icon-192.png">
+
+  <!-- Main Stylesheet -->
+  <link rel="stylesheet" href="styles.css?v=15">
+
+  <script>
+    // Register PWA Service Worker for Mobile Application
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('./sw.js').then(reg => {
+          console.log('[PWA] Service Worker registered with scope:', reg.scope);
+        }).catch(err => {
+          console.warn('[PWA] Service Worker registration failed:', err);
+        });
+      });
+    }
+  </script>
+</head>
+
+<body>
+  <!-- Ambient background lighting effects -->
+  <div class="ambient-glow glow-1"></div>
+  <div class="ambient-glow glow-2"></div>
+  <div class="ambient-glow glow-3"></div>
+
+  <!-- ========================================================
+       MAVIS WELCOME & INTRO ONBOARDING SPLASH SCREEN (OPTIONAL / HIDDEN BY DEFAULT)
+       Brand: Mavis chúc bạn ngủ ngon • Slogan: Bạn ngủ ngon, Mavis hạnh phúc
+       ======================================================== -->
+  <div id="mavis-welcome-splash" class="mavis-welcome-splash splash-hidden" style="display: none !important;">
+    <div class="splash-backdrop-stars"></div>
+    <div class="splash-card glass-card">
+      <button type="button" id="splash-close-btn" class="splash-close-btn"
+        onclick="window.hideMavisSplash && window.hideMavisSplash()" title="Bỏ qua và xem giao diện">&times;</button>
+
+      <!-- Luminous Moon & Stars Emblem -->
+      <div class="splash-celestial-emblem">
+        <div class="splash-moon-circle">
+          <svg viewBox="0 0 100 100" class="splash-moon-svg" fill="none">
+            <defs>
+              <linearGradient id="splashMoonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#FEF08A" />
+                <stop offset="50%" stop-color="#F59E0B" />
+                <stop offset="100%" stop-color="#D97706" />
+              </linearGradient>
+              <filter id="splashGlow" x="-20%" y="-20%" width="140%" height="140%">
+                <feGaussianBlur stdDeviation="3" result="blur" />
+                <feComposite in="SourceGraphic" in2="blur" operator="over" />
+              </filter>
+            </defs>
+            <circle cx="50" cy="50" r="46" fill="rgba(15, 23, 42, 0.75)" stroke="rgba(253, 224, 71, 0.35)"
+              stroke-width="2" />
+            <!-- Crescent Moon -->
+            <path
+              d="M52 18 C34.3 18 20 32.3 20 50 C20 67.7 34.3 82 52 82 C60.4 82 68.1 78.8 73.8 73.4 C60.4 72.4 49.6 61.6 49.6 48.2 C49.6 35.8 57.6 25.2 68.8 21.6 C63.8 19.3 58.1 18 52 18 Z"
+              fill="url(#splashMoonGrad)" filter="url(#splashGlow)" />
+            <!-- Sparkling Stars -->
+            <path d="M68 28 L70.5 35 L77.5 37.5 L70.5 40 L68 47 L65.5 40 L58.5 37.5 L65.5 35 Z" fill="#FFFFFF" />
+            <circle cx="34" cy="32" r="2.5" fill="#FEF08A" />
+            <circle cx="38" cy="66" r="2" fill="#FFFFFF" />
+            <circle cx="72" cy="58" r="2.2" fill="#FBBF24" />
+          </svg>
+          <div class="splash-orbit-pulse"></div>
+        </div>
+      </div>
+
+      <!-- Brand Heading & Slogan -->
+      <div class="splash-text-content">
+        <div class="splash-badge-welcome">
+          <i class="fa-solid fa-moon"></i> Chào Mừng Đến Với Mavis
+        </div>
+        <h2 class="splash-app-title">Mavis Chúc Bạn Ngủ Ngon</h2>
+        <p class="splash-slogan">"Bạn ngủ ngon, Mavis hạnh phúc"</p>
+        <p class="splash-description">
+          Hệ thống AI chẩn đoán 5 trụ cột y khoa & đồng hành cùng nhịp sinh học tự nhiên. Giải pháp phi dược lý giúp bạn
+          giải tỏa âu lo, thư giãn thần kinh và chìm vào giấc ngủ sâu an lành.
+        </p>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="splash-actions-box">
+        <button type="button" id="splash-login-btn" class="splash-btn-primary"
+          onclick="window.handleSplashLogin && window.handleSplashLogin()">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i>
+          <span>Đăng Nhập Ngay</span>
+        </button>
+        <button type="button" id="splash-register-btn" class="splash-btn-secondary"
+          onclick="window.handleSplashRegister && window.handleSplashRegister()">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>Tạo Tài Khoản Mới</span>
+        </button>
+        <button type="button" id="splash-explore-btn" class="splash-btn-ghost"
+          onclick="window.hideMavisSplash && window.hideMavisSplash()">
+          <span>Khám Phá Trước (Chế Độ Khách)</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="splash-footer-note">
+        <i class="fa-solid fa-shield-halved"></i> Bảo mật dữ liệu y tế • Đồng bộ thời gian thực Web & Mobile App
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // Fail-safe immediate handlers so full website works 100% and modals never freeze
+    window.hideMavisSplash = function () {
+      var splash = document.getElementById('mavis-welcome-splash');
+      if (splash) {
+        splash.style.opacity = '0';
+        splash.style.pointerEvents = 'none';
+        splash.style.display = 'none';
+        splash.classList.add('splash-hidden');
+      }
+    };
+
+    window.closeUserAuthModal = function () {
+      var modal = document.getElementById('user-auth-modal');
+      if (modal) {
+        modal.style.display = 'none';
+      }
+      window.hideMavisSplash();
+      document.body.style.overflow = '';
+
+      // Return user directly to the active tab / section they were browsing
+      var activeTab = (window.AppState && window.AppState.currentTab) || 'quiz';
+      var secMap = {
+        'quiz': 'quiz-assessment-section',
+        'chat': 'voice-talk-section',
+        'talk': 'voice-talk-section',
+        'voice': 'voice-talk-section',
+        'calendar': 'calendar-scanner-section'
+      };
+      var targetId = secMap[activeTab] || 'quiz-assessment-section';
+      var sec = document.getElementById(targetId);
+      if (sec && sec.style.display !== 'none') {
+        sec.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+      }
+    };
+
+    window.openUserAuthModal = function (tab) {
+      window.hideMavisSplash();
+      var modal = document.getElementById('user-auth-modal');
+      if (modal) {
+        modal.style.display = 'flex';
+        modal.style.zIndex = '10050';
+      }
+      var tabLoginBtn = document.getElementById('tab-auth-login-btn');
+      var tabRegisterBtn = document.getElementById('tab-auth-register-btn');
+      var paneLogin = document.getElementById('pane-auth-login');
+      var paneRegister = document.getElementById('pane-auth-register');
+
+      if (tab === 'register') {
+        if (tabRegisterBtn) tabRegisterBtn.classList.add('active');
+        if (tabLoginBtn) tabLoginBtn.classList.remove('active');
+        if (paneRegister) paneRegister.style.display = 'block';
+        if (paneLogin) paneLogin.style.display = 'none';
+        setTimeout(function () { var el = document.getElementById('reg-fullname-input'); if (el) el.focus(); }, 60);
+      } else {
+        if (tabLoginBtn) tabLoginBtn.classList.add('active');
+        if (tabRegisterBtn) tabRegisterBtn.classList.remove('active');
+        if (paneLogin) paneLogin.style.display = 'block';
+        if (paneRegister) paneRegister.style.display = 'none';
+        setTimeout(function () { var el = document.getElementById('login-phone-input'); if (el) el.focus(); }, 60);
+      }
+    };
+
+    window.handleSplashLogin = function () {
+      window.hideMavisSplash();
+      window.openUserAuthModal('login');
+    };
+
+    window.handleSplashRegister = function () {
+      window.hideMavisSplash();
+      window.openUserAuthModal('register');
+    };
+  </script>
+
+  <!-- Main Container -->
+  <div class="app-layout">
+
+    <!-- Medical Disclaimer Notification Ticket (Top-Right Floating Ticket with 10s Auto-Dismiss) -->
+    <!-- Medical Disclaimer Notification Ticket (Top-Right Floating Ticket - Compact & Neat) -->
+    <aside class="medical-disclaimer-banner ticket-notification" id="medical-disclaimer-banner" role="alert" aria-label="Cảnh báo y tế">
+      <div class="disclaimer-ticket-header">
+        <div class="ticket-badge-group">
+          <div class="ticket-icon-circle">
+            <i class="fa-solid fa-triangle-exclamation"></i>
+          </div>
+          <div>
+            <h5 class="ticket-title">
+              <span>Cảnh Báo Y Khoa</span>
+              <span class="ticket-pulse-dot" title="Đang kích hoạt"></span>
+            </h5>
+            <span class="ticket-subtitle">Khuyến cáo an toàn sức khỏe</span>
+          </div>
+        </div>
+        <button type="button" class="ticket-close-btn" id="close-disclaimer-banner-btn" title="Đóng thông báo" aria-label="Đóng cảnh báo">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <div class="disclaimer-ticket-body">
+        <p class="ticket-message">
+          Ứng dụng <strong>không thay thế chẩn đoán y tế</strong>. Mọi phân tích chỉ mang tính tham khảo lối sống, vui lòng thăm khám chuyên khoa khi có bệnh lý.
+        </p>
+      </div>
+
+      <div class="disclaimer-ticket-footer">
+        <div class="ticket-timer-hint">
+          <i class="fa-regular fa-clock"></i>
+          <span>10s</span>
+        </div>
+        <div class="ticket-btn-group">
+          <button type="button" class="ticket-btn-detail" id="view-disclaimer-details-btn" title="Xem chi tiết điều khoản y tế">
+            <span class="btn-icon-shield"><i class="fa-solid fa-shield-halved"></i></span>
+            <span class="btn-text">Chi tiết</span>
+            <span class="btn-icon-arrow"><i class="fa-solid fa-chevron-right"></i></span>
+          </button>
+          <button type="button" class="ticket-btn-ack" id="ack-disclaimer-banner-btn" title="Đã hiểu và đồng ý">
+            <i class="fa-solid fa-check"></i>
+            <span>Đã hiểu</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- 10s Countdown Progress Bar -->
+      <div class="ticket-progress-track" aria-hidden="true">
+        <div class="ticket-progress-bar" id="disclaimer-ticket-progress"></div>
+      </div>
+    </aside>
+
+    <!-- Navigation / Top Header -->
+    <header class="top-nav">
+      <div class="brand">
+        <div class="brand-icon">
+          <i class="fa-solid fa-moon"></i>
+          <span class="pulsing-orbit"></span>
+        </div>
+        <div class="brand-text">
+          <h1 class="brand-title">Mavis <span class="ai-badge">AI</span></h1>
+        </div>
+      </div>
+
+      <!-- Realtime Chrono Widget -->
+      <div class="chrono-status-bar">
+        <div class="chrono-pill" title="Thời gian và nhịp sinh học hiện tại">
+          <span class="live-dot"></span>
+          <span id="current-time-display">09:55:00</span>
+          <span class="chrono-phase-tag" id="chrono-phase-badge">⚡ Nhịp sinh học</span>
+        </div>
+        <div class="bedtime-countdown" title="Thời gian đếm ngược đến giờ đi ngủ mục tiêu">
+          <i class="fa-regular fa-clock"></i>
+          <span id="bedtime-countdown-text">Còn 12h 35p (ngủ 23:00)</span>
+        </div>
+      </div>
+
+      <!-- Top actions -->
+      <div class="nav-actions">
+
+        <!-- Sound player quick toggle -->
+        <button id="soundscape-quick-btn" class="btn-icon" title="Mở máy phát âm thanh sóng não thư giãn">
+          <i class="fa-solid fa-headphones"></i>
+          <span class="sound-playing-wave" id="sound-indicator" style="display: none;">
+            <span></span><span></span><span></span>
+          </span>
+        </button>
+
+        <!-- User Profile Pill Trigger Button (Duolingo & Facebook Style) -->
+        <button type="button" id="user-profile-menu-btn" class="btn-user-profile-pill" title="Hồ Sơ Cá Nhân Người Dùng"
+          aria-label="Mở Hồ Sơ Cá Nhân Người Dùng">
+          <div class="pill-avatar-wrap" id="nav-pill-avatar">
+            <svg viewBox="0 0 100 100" width="100%" height="100%" class="avatar-svg-illu">
+              <circle cx="50" cy="50" r="48" fill="#3B82F6" />
+              <ellipse cx="50" cy="88" rx="34" ry="22" fill="#7C3AED" />
+              <circle cx="50" cy="46" r="16" fill="#FDE047" />
+              <path d="M35 44 C35 30, 65 30, 65 44 C65 37, 60 32, 50 32 C40 32, 35 37, 35 44 Z" fill="#EAB308" />
+              <rect x="30" y="65" width="40" height="25" rx="3" fill="#F1F5F9" />
+              <rect x="33" y="68" width="34" height="19" rx="2" fill="#0EA5E9" />
+              <circle cx="50" cy="77" r="2.5" fill="#FFFFFF" />
+            </svg>
+          </div>
+          <div class="pill-user-info" id="nav-pill-info">
+            <span class="pill-name" id="nav-pill-name">Nguyễn Văn Hùng</span>
+            <span class="pill-streak" id="nav-pill-streak"><i class="fa-solid fa-fire text-amber"></i> 5 ngày</span>
+          </div>
+          <i class="fa-solid fa-chevron-down pill-chevron"></i>
+        </button>
+      </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main class="content-container">
+
+      <!-- Hero Visual Banner -->
+      <section class="hero-circadian-banner">
+        <div class="banner-image-wrap">
+          <img src="assets/sleep_hero.jpg" alt="Circadian Rhythm & Sleep Architecture" class="hero-bg-img">
+          <div class="banner-overlay"></div>
+        </div>
+        <div class="banner-content">
+          <div class="banner-meta-row">
+            <div class="banner-slogan-badge"><i class="fa-solid fa-moon"></i> "Bạn ngủ ngon, Mavis hạnh phúc"</div>
+          </div>
+          <h2 class="banner-heading">Khám phá 5 trụ cột bí mật quyết định giấc ngủ và phục hồi não bộ</h2>
+          <p class="banner-desc">
+            Không chỉ là một dòng nhật ký đơn thuần. AI thu thập toàn diện các yếu tố: <strong>Tâm lý</strong>,
+            <strong>Môi trường phòng ngủ</strong>, <strong>Thói quen/Chất kích thích</strong>, <strong>Nội tiết/Tuổi
+              tác</strong> và <strong>Bệnh lý thể chất</strong>. Sau đó quét lịch công việc của bạn để đưa ra các
+            vi-hành động siêu dễ làm (chỉ 2-5 phút) theo thời gian thực!
+          </p>
+        </div>
+      </section>
+
+      <!-- Mode Selector Tabs: Questionnaire Quiz vs Talk Mode -->
+      <div class="mode-selector-bar">
+        <div class="mode-tab-buttons">
+          <button class="mode-btn active" id="tab-btn-quiz">
+            <i class="fa-solid fa-list-check"></i>
+            <span>Trắc Nghiệm 5 Trụ Cột Y Khoa</span>
+          </button>
+          <button class="mode-btn" id="tab-btn-voice" aria-controls="voice-talk-section" aria-pressed="false">
+            <i class="fa-solid fa-comments"></i>
+            <span>Trò chuyện AI</span>
+          </button>
+          <button class="mode-btn" id="tab-btn-calendar">
+            <i class="fa-solid fa-calendar-days"></i>
+            <span>Kiểm Tra Lịch Trình Công Việc</span>
+          </button>
+        </div>
+      </div>
+
+      <!-- SECTION 1: 5-PILLAR DIAGNOSTIC WIZARD (QUIZ MODE) -->
+      <section id="quiz-assessment-section" class="card glass-card wizard-card">
+
+        <!-- Step Indicator Progress (6 Steps) -->
+        <div class="wizard-stepper">
+          <div class="step-node active" data-step="1">
+            <span class="step-num">1</span>
+            <span class="step-title">Tâm Lý & Tinh Thần</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-node" data-step="2">
+            <span class="step-num">2</span>
+            <span class="step-title">Môi Trường Ngủ</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-node" data-step="3">
+            <span class="step-num">3</span>
+            <span class="step-title">Lối Sống & Độc Tố</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-node" data-step="4">
+            <span class="step-num">4</span>
+            <span class="step-title">Sinh Lý & Nội Tiết</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-node" data-step="5">
+            <span class="step-num">5</span>
+            <span class="step-title">Bệnh Lý & Đau Nhức</span>
+          </div>
+          <div class="step-connector"></div>
+          <div class="step-node" data-step="6">
+            <span class="step-num">6</span>
+            <span class="step-title">Xác Nhận Thông Tin</span>
+          </div>
+        </div>
+
+        <!-- Wizard Step Containers -->
+        <div class="wizard-content">
+
+          <!-- STEP 1: Tâm Lý & Tinh Thần -->
+          <div class="wizard-step-pane active" id="wizard-step-1">
+            <div class="step-header">
+              <span class="step-badge"><i class="fa-solid fa-brain"></i> Trụ Cột 1: Tâm Lý & Căng Thẳng Thần Kinh</span>
+              <h3 class="step-headline">Trạng thái tinh thần & áp lực hôm nay của bạn thế nào?</h3>
+              <p class="step-subtext">Có thể chọn 1 hoặc nhiều đáp án phù hợp với tình trạng thực tế của bạn.</p>
+            </div>
+
+            <div class="question-block" data-qkey="stress_level">
+              <label class="q-label"><i class="fa-solid fa-fire"></i> 1.1 Mức độ stress, áp lực deadline hoặc căng thẳng
+                hôm nay:</label>
+              <div class="options-grid" data-question="stress_level">
+                <button type="button" class="opt-btn" data-value="low">
+                  <span class="opt-icon">😌</span>
+                  <div class="opt-text">
+                    <strong>Thấp / Thư thái</strong>
+                    <small>Công việc êm ả, tinh thần thư giãn</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn selected" data-value="medium">
+                  <span class="opt-icon">😐</span>
+                  <div class="opt-text">
+                    <strong>Vừa phải / Bận rộn</strong>
+                    <small>Khá nhiều việc nhưng vẫn kiểm soát được</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="high">
+                  <span class="opt-icon">😫</span>
+                  <div class="opt-text">
+                    <strong>Rất căng thẳng / Deadline dồn dập</strong>
+                    <small>Áp lực lớn, tim đập nhanh, bồn chồn lo âu</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="mood_state">
+              <label class="q-label"><i class="fa-solid fa-cloud-rain"></i> 1.2 Dấu hiệu cảm xúc tiêu cực hoặc uể oải
+                (Trầm cảm / Mệt mỏi):</label>
+              <div class="options-grid" data-question="mood_state">
+                <button type="button" class="opt-btn selected" data-value="good">
+                  <span class="opt-icon">✨</span>
+                  <div class="opt-text">
+                    <strong>Lạc quan & Tỉnh táo</strong>
+                    <small>Có động lực, đầu óc minh mẫn</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="brain_fog">
+                  <span class="opt-icon">🌫️</span>
+                  <div class="opt-text">
+                    <strong>Sương mù não / Hay buồn ngủ ngày</strong>
+                    <small>Uể oải, mất tập trung lúc 10h-14h</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="anxious">
+                  <span class="opt-icon">⚡</span>
+                  <div class="opt-text">
+                    <strong>Lo âu dồn dập / Suy nghĩ miên man</strong>
+                    <small>Đầu óc không thể ngừng suy nghĩ về công việc</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 2: Yếu Tố Môi Trường -->
+          <div class="wizard-step-pane" id="wizard-step-2">
+            <div class="step-header">
+              <span class="step-badge"><i class="fa-solid fa-house-chimney-window"></i> Trụ Cột 2: Môi Trường Phòng
+                Ngủ</span>
+              <h3 class="step-headline">Không gian phòng ngủ và môi trường sống của bạn ra sao?</h3>
+              <p class="step-subtext">Có thể chọn 1 hoặc nhiều đáp án phù hợp với tình trạng thực tế của bạn.</p>
+            </div>
+
+            <div class="question-block" data-qkey="env_light">
+              <label class="q-label"><i class="fa-solid fa-lightbulb"></i> 2.1 Mức độ phơi nhiễm ánh sáng buổi
+                tối:</label>
+              <div class="options-grid" data-question="env_light">
+                <button type="button" class="opt-btn selected" data-value="dark">
+                  <span class="opt-icon">🌑</span>
+                  <div class="opt-text">
+                    <strong>Tối hoàn toàn / Đèn ngủ vàng ấm</strong>
+                    <small>Phòng có rèm cản sáng, ít tiếp xúc đèn huỳnh quang</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="screen_heavy">
+                  <span class="opt-icon">📱</span>
+                  <div class="opt-text">
+                    <strong>Nhiều ánh sáng xanh màn hình</strong>
+                    <small>Nhìn laptop, điện thoại, tivi liên tục sát giờ ngủ</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="light_polluted">
+                  <span class="opt-icon">💡</span>
+                  <div class="opt-text">
+                    <strong>Bị hắt sáng từ ngoài đường / Đèn sáng</strong>
+                    <small>Phòng không đủ tối, bị lọt sáng</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="env_temp">
+              <label class="q-label"><i class="fa-solid fa-temperature-half"></i> 2.2 Nhiệt độ phòng ngủ dự kiến tối
+                nay:</label>
+              <div class="options-grid" data-question="env_temp">
+                <button type="button" class="opt-btn selected" data-value="ideal">
+                  <span class="opt-icon">❄️</span>
+                  <div class="opt-text">
+                    <strong>Lý tưởng (24°C – 26°C)</strong>
+                    <small>Mát mẻ, dễ chịu, cơ thể tự hạ nhiệt tốt</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="hot">
+                  <span class="opt-icon">🔥</span>
+                  <div class="opt-text">
+                    <strong>Nóng bức / Bí bách (> 28°C)</strong>
+                    <small>Không có máy lạnh hoặc quạt yếu, dễ đổ mồ hôi</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="too_cold">
+                  <span class="opt-icon">🥶</span>
+                  <div class="opt-text">
+                    <strong>Quá lạnh (< 22°C)</strong>
+                        <small>Lạnh run, buốt cơ bắp làm co mạch</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="env_noise">
+              <label class="q-label"><i class="fa-solid fa-volume-high"></i> 2.3 Tiếng ồn xung quanh khu vực
+                ngủ:</label>
+              <div class="options-grid" data-question="env_noise">
+                <button type="button" class="opt-btn selected" data-value="quiet">
+                  <span class="opt-icon">🤫</span>
+                  <div class="opt-text">
+                    <strong>Yên tĩnh / Cách âm tốt</strong>
+                    <small>Dưới 30dB, không có tiếng ồn gây giật mình</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="noisy">
+                  <span class="opt-icon">🚗</span>
+                  <div class="opt-text">
+                    <strong>Ồn ào (Tiếng xe cộ / Hàng xóm / Công trường)</strong>
+                    <small>Dễ bị đánh thức giữa đêm, tăng hooc-môn cảnh giác</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 3: Thói Quen & Lối Sống -->
+          <div class="wizard-step-pane" id="wizard-step-3">
+            <div class="step-header">
+              <span class="step-badge"><i class="fa-solid fa-mug-hot"></i> Trụ Cột 3: Thói Quen & Chất Kích Thích</span>
+              <h3 class="step-headline">Lượng Caffeine, Rượu Bia & Thói Quen Dùng Thiết Bị</h3>
+              <p class="step-subtext">Có thể chọn 1 hoặc nhiều đáp án phù hợp với tình trạng thực tế của bạn.</p>
+            </div>
+
+            <div class="question-block" data-qkey="caffeine_usage">
+              <label class="q-label"><i class="fa-solid fa-coffee"></i> 3.1 Tiêu thụ Caffeine (Cà phê, trà đặc, nước
+                tăng lực):</label>
+              <div class="options-grid" data-question="caffeine_usage">
+                <button type="button" class="opt-btn" data-value="none">
+                  <span class="opt-icon">💧</span>
+                  <div class="opt-text">
+                    <strong>Không dùng / Chỉ uống nước lọc</strong>
+                    <small>Không nạp caffeine hôm nay</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn selected" data-value="morning_only">
+                  <span class="opt-icon">☕</span>
+                  <div class="opt-text">
+                    <strong>1 ly vào buổi sáng (Trước 10h)</strong>
+                    <small>Đã qua gần 2 chu kỳ bán rã, mức an toàn</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="late_high">
+                  <span class="opt-icon">⚡</span>
+                  <div class="opt-text">
+                    <strong>2+ ly hoặc có uống sau 11h trưa</strong>
+                    <small>Nguy cơ cao còn tồn dư caffeine lúc lên giường</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="alcohol_nicotine">
+              <label class="q-label"><i class="fa-solid fa-wine-glass"></i> 3.2 Rượu bia, Cồn hoặc Thuốc lá
+                (Nicotine):</label>
+              <div class="options-grid" data-question="alcohol_nicotine">
+                <button type="button" class="opt-btn selected" data-value="none">
+                  <span class="opt-icon">🚫</span>
+                  <div class="opt-text">
+                    <strong>Hoàn toàn không dùng</strong>
+                    <small>Không rượu bia, không hút thuốc</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="alcohol_dinner">
+                  <span class="opt-icon">🍺</span>
+                  <div class="opt-text">
+                    <strong>Có uống rượu / bia chiều tối</strong>
+                    <small>Gây buồn ngủ giả tạo ban đầu nhưng phân mảnh REM về sáng</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="nicotine">
+                  <span class="opt-icon">🚬</span>
+                  <div class="opt-text">
+                    <strong>Có hút thuốc lá / vape</strong>
+                    <small>Nicotine kích thích hệ thần kinh trung ương gây tỉnh táo</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="dinner_habit">
+              <label class="q-label"><i class="fa-solid fa-utensils"></i> 3.3 Thói quen ăn uống bữa tối & Uống
+                nước:</label>
+              <div class="options-grid" data-question="dinner_habit">
+                <button type="button" class="opt-btn selected" data-value="light_early">
+                  <span class="opt-icon">🥗</span>
+                  <div class="opt-text">
+                    <strong>Ăn thanh đạm, trước khi ngủ > 3 tiếng</strong>
+                    <small>Dạ dày kịp tiêu hóa, không bị trào ngược</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="heavy_late">
+                  <span class="opt-icon">🍔</span>
+                  <div class="opt-text">
+                    <strong>Ăn no nê nhiều dầu mỡ / Ăn muộn sát giờ ngủ</strong>
+                    <small>Đầy bụng, khó tiêu, nguy cơ trào ngược dạ dày</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="drink_lots_water">
+                  <span class="opt-icon">🚰</span>
+                  <div class="opt-text">
+                    <strong>Uống nhiều nước / Canh sát giờ ngủ</strong>
+                    <small>Dễ bị thức giấc đi vệ sinh 2-3 lần giữa đêm</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="bed_phone">
+              <label class="q-label"><i class="fa-solid fa-mobile-screen"></i> 3.4 Thói quen dùng điện thoại trên
+                giường:</label>
+              <div class="options-grid" data-question="bed_phone">
+                <button type="button" class="opt-btn" data-value="no_phone">
+                  <span class="opt-icon">📵</span>
+                  <div class="opt-text">
+                    <strong>Không dùng (Để xa giường ngủ)</strong>
+                    <small>Đọc sách giấy hoặc thư giãn</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn selected" data-value="lướt_tiktok_fb">
+                  <span class="opt-icon">📱</span>
+                  <div class="opt-text">
+                    <strong>Lướt mạng xã hội / xem phim trên giường</strong>
+                    <small>Dopamine liên tục khiến não bộ bị cuốn, khó tắt máy</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 4: Yếu Tố Sinh Lý & Nội Tiết -->
+          <div class="wizard-step-pane" id="wizard-step-4">
+            <div class="step-header">
+              <span class="step-badge"><i class="fa-solid fa-venus-mars"></i> Trụ Cột 4: Sinh Lý & Nội Tiết Tố</span>
+              <h3 class="step-headline">Nhóm tuổi và tình trạng nội tiết tố của cơ thể</h3>
+              <p class="step-subtext">Có thể chọn 1 hoặc nhiều đáp án phù hợp với tình trạng thực tế của bạn.</p>
+            </div>
+
+            <div class="question-block" data-qkey="age_group">
+              <label class="q-label"><i class="fa-solid fa-user-clock"></i> 4.1 Nhóm tuổi của bạn:</label>
+              <div class="options-grid" data-question="age_group">
+                <button type="button" class="opt-btn selected" data-value="young_adult">
+                  <span class="opt-icon">🧑</span>
+                  <div class="opt-text">
+                    <strong>Thanh niên & Người trưởng thành (18 – 45 tuổi)</strong>
+                    <small>Nhịp sinh học cần duy trì ổn định</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="middle_aged">
+                  <span class="opt-icon">🧓</span>
+                  <div class="opt-text">
+                    <strong>Trung niên & Cao tuổi (> 50 tuổi)</strong>
+                    <small>Khoảng 75% người cao tuổi gặp vấn đề ngủ nông, thức sớm</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="hormone_state">
+              <label class="q-label"><i class="fa-solid fa-droplet-half-stroke"></i> 4.2 Tình trạng nội tiết (Tiền mãn
+                kinh / Thay đổi hormone):</label>
+              <div class="options-grid" data-question="hormone_state">
+                <button type="button" class="opt-btn selected" data-value="normal">
+                  <span class="opt-icon">🟢</span>
+                  <div class="opt-text">
+                    <strong>Bình thường / Không có triệu chứng</strong>
+                    <small>Nội tiết tố ổn định</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="menopause_hotflash">
+                  <span class="opt-icon">🔥</span>
+                  <div class="opt-text">
+                    <strong>Tiền mãn kinh: Bốc hỏa & Đổ mồ hôi đêm</strong>
+                    <small>Suy giảm estrogen làm thức giấc giữa đêm nhiều lần</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 5: Bệnh Lý & Tình Trạng Thể Chất -->
+          <div class="wizard-step-pane" id="wizard-step-5">
+            <div class="step-header">
+              <span class="step-badge"><i class="fa-solid fa-stethoscope"></i> Trụ Cột 5: Bệnh Lý & Đau Nhức Thể
+                Chất</span>
+              <h3 class="step-headline">Bạn có đang bị đau nhức hay vấn đề sức khỏe nào cản trở giấc ngủ?</h3>
+              <p class="step-subtext">Có thể chọn 1 hoặc nhiều đáp án phù hợp với tình trạng thực tế của bạn.</p>
+            </div>
+
+            <div class="question-block" data-qkey="physical_pain">
+              <label class="q-label"><i class="fa-solid fa-bone"></i> 5.1 Đau mỏi cơ xương khớp / Đau đầu:</label>
+              <div class="options-grid" data-question="physical_pain">
+                <button type="button" class="opt-btn selected" data-value="none">
+                  <span class="opt-icon">💪</span>
+                  <div class="opt-text">
+                    <strong>Không đau nhức / Cơ thể khỏe khoắn</strong>
+                    <small>Không có cảm giác khó chịu ở cơ bắp</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="neck_back_pain">
+                  <span class="opt-icon">🦴</span>
+                  <div class="opt-text">
+                    <strong>Đau mỏi cổ vai gáy / Đau thắt lưng</strong>
+                    <small>Do ngồi văn phòng nhiều, khó tìm tư thế nằm thoải mái</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="headache">
+                  <span class="opt-icon">🤕</span>
+                  <div class="opt-text">
+                    <strong>Đau nửa đầu / Nặng đầu căng cơ</strong>
+                    <small>Cảm giác mạch máu giật giật, khó thư giãn</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+
+            <div class="question-block" data-qkey="chronic_condition">
+              <label class="q-label"><i class="fa-solid fa-virus"></i> 5.2 Bệnh lý mạn tính (Trào ngược dạ dày, xoang,
+                tiểu đêm):</label>
+              <div class="options-grid" data-question="chronic_condition">
+                <button type="button" class="opt-btn selected" data-value="none">
+                  <span class="opt-icon">🛡️</span>
+                  <div class="opt-text">
+                    <strong>Không có bệnh mạn tính</strong>
+                    <small>Hệ hô hấp và tiêu hóa bình thường</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="gerd">
+                  <span class="opt-icon">🫀</span>
+                  <div class="opt-text">
+                    <strong>Trào ngược dạ dày thực quản (GERD) / Ợ nóng</strong>
+                    <small>Nằm xuống bị nghẹn cổ họng, nóng rát lồng ngực</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn" data-value="nocturia">
+                  <span class="opt-icon">🚽</span>
+                  <div class="opt-text">
+                    <strong>Tiểu đêm nhiều lần / Thận yếu</strong>
+                    <small>Phải thức dậy 2-3 lần làm ngắt quãng giấc ngủ sâu</small>
+                  </div>
+                </button>
+                <button type="button" class="opt-btn opt-btn-custom" data-value="custom">
+                  <span class="opt-icon">✍️</span>
+                  <div class="opt-text">
+                    <strong>Khác (bạn hãy điền nội dung của mình)</strong>
+                    <small>Tự nhập bằng chữ, số hoặc ký tự theo ý bạn</small>
+                  </div>
+                </button>
+              </div>
+              <div class="custom-answer-wrap" style="display: none;">
+                <div class="custom-input-box">
+                  <i class="fa-solid fa-pen-to-square"></i>
+                  <input type="text" class="custom-answer-input"
+                    placeholder="Điền câu trả lời của bạn (chữ, số hoặc ký tự)..." aria-label="Nội dung khác tự điền">
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- STEP 6: Bảng Tổng Hợp & Xác Nhận Chắc Chắn Thông Tin -->
+          <div class="wizard-step-pane" id="wizard-step-6">
+            <div class="step-header">
+              <span class="step-badge"><i class="fa-solid fa-clipboard-check"></i> Bước 6: Rà Soát & Xác Nhận Dữ Liệu
+                Khảo Sát</span>
+              <h3 class="step-headline">Bảng tổng hợp toàn bộ thông tin bạn đã lựa chọn</h3>
+              <p class="step-subtext">Vui lòng rà soát kỹ các câu trả lời bạn đã chọn hoặc tự điền dưới đây trước khi AI
+                tiến hành phân tích y khoa chuyên sâu.</p>
+            </div>
+
+            <!-- Bảng tổng hợp các thông tin đã chọn -->
+            <div class="summary-table-container">
+              <table class="summary-table" id="summary-confirmation-table">
+                <thead>
+                  <tr>
+                    <th style="width: 25%;">Trụ Cột Y Khoa</th>
+                    <th style="width: 35%;">Nội Dung Khảo Sát</th>
+                    <th style="width: 40%;">Thông Tin Bạn Đã Chọn / Tự Điền</th>
+                  </tr>
+                </thead>
+                <tbody id="summary-confirmation-tbody">
+                  <!-- Được sinh tự động bằng JavaScript -->
+                </tbody>
+              </table>
+            </div>
+
+            <!-- Khối câu hỏi xác nhận chắc chắn -->
+            <div class="confirmation-action-card">
+              <div class="confirm-card-icon">
+                <i class="fa-solid fa-shield-heart"></i>
+              </div>
+              <div class="confirm-card-details">
+                <h4 class="confirm-card-title">Bạn có chắc chắn với toàn bộ thông tin bạn vừa đưa ra ở trên không?</h4>
+                <p class="confirm-card-desc">Dữ liệu này sẽ được dùng để phân tích chuẩn xác trục HPA (Cortisol), cơ chế
+                  tiết Melatonin nội sinh và phác đồ vi-hành động tối ưu nhất cho bạn.</p>
+                <label class="confirm-check-control" for="user-info-confirm-checkbox">
+                  <input type="checkbox" id="user-info-confirm-checkbox" checked>
+                  <span class="confirm-indicator"><i class="fa-solid fa-check"></i></span>
+                  <span class="confirm-text">
+                    <strong>Tôi xác nhận và chắc chắn</strong> các thông tin trên là hoàn toàn chính xác theo thực tế
+                    của tôi.
+                  </span>
+                </label>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Wizard Navigation Footer -->
+        <div class="wizard-footer">
+          <button type="button" id="wizard-prev-btn" class="btn-secondary" style="visibility: hidden;">
+            <i class="fa-solid fa-arrow-left"></i> Quay lại
+          </button>
+
+          <div class="step-indicator-text">
+            Bước <span id="current-step-display">1</span> / 6
+          </div>
+
+          <button type="button" id="wizard-next-btn" class="btn-primary">
+            <span>Tiếp theo</span> <i class="fa-solid fa-arrow-right"></i>
+          </button>
+
+          <button type="button" id="wizard-submit-btn" class="btn-primary analyze-cta" style="display: none;">
+            <i class="fa-solid fa-brain"></i>
+            <span>Hoàn Tất & Phân Tích Chuẩn Y Khoa</span>
+          </button>
+        </div>
+
+      </section>
+
+      <!-- SECTION 2: AI VOICE TALK / INTERACTIVE CONVERSATION MODE -->
+      <section id="voice-talk-section" class="card glass-card talk-mode-card" style="display: none;">
+        <div class="talk-mode-switch" role="group" aria-label="Chế độ trò chuyện">
+          <button type="button" id="talk-mode-voice" aria-pressed="false" aria-controls="voice-controls"><i
+              class="fa-solid fa-microphone-lines"></i> Voice</button>
+          <button type="button" id="talk-mode-chat" class="active" aria-pressed="true" aria-controls="chat-controls"><i
+              class="fa-solid fa-comments"></i> Chat</button>
+        </div>
+        <div class="talk-split-layout">
+
+          <!-- LEFT COLUMN: VOICE / TEXT CONVERSATION -->
+          <div class="talk-conversation-panel">
+            <div class="talk-header">
+              <div class="talk-avatar-wrap">
+                <div class="ai-orb">
+                  <i class="fa-solid fa-headset"></i>
+                </div>
+                <div>
+                  <h3 class="talk-title" id="talk-mode-title">Chat · Trò chuyện bằng chữ</h3>
+                  <p class="talk-subtitle" id="talk-mode-description">Nhắn cho Mavis về giấc ngủ hoặc lịch sinh hoạt của
+                    bạn.</p>
+                </div>
+              </div>
+              <button type="button" id="restart-talk-btn" class="btn-secondary" title="Bắt đầu lại buổi trò chuyện">
+                <i class="fa-solid fa-rotate-left"></i> Bắt đầu lại
+              </button>
+            </div>
+
+            <!-- Chat messages container -->
+            <div class="talk-messages-box" id="talk-messages-box" role="log" aria-label="Nội dung trò chuyện với Mavis">
+              <!-- Dynamic conversation bubbles -->
+            </div>
+
+            <!-- Talk input bar -->
+            <div id="voice-controls" class="voice-controls" hidden>
+              <p id="voice-status" role="status" aria-live="polite">Bấm micro để bắt đầu nói.</p>
+              <button type="button" id="talk-mic-btn" class="btn-mic-large" title="Bấm để nói bằng giọng nói"
+                aria-label="Bắt đầu nói" aria-pressed="false">
+                <i class="fa-solid fa-microphone"></i>
+                <span class="mic-wave"></span>
+              </button>
+              <span id="voice-mic-label">Bấm để nói</span>
+              <button type="button" id="voice-replay-btn" class="btn-secondary"><i class="fa-solid fa-volume-high"></i>
+                Nghe lại câu trả lời</button>
+              <p class="talk-subtitle">Trò chuyện cùng Mavis.</p>
+            </div>
+            <div class="talk-controls-bar" id="chat-controls">
+              <input type="text" id="talk-text-input" aria-label="Tin nhắn chat" placeholder="Nhắn cho Mavis..."
+                maxlength="12000" />
+              <button type="button" id="talk-send-btn" class="btn-icon" title="Gửi câu trả lời">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+
+          <aside class="talk-extraction-tracker-panel" aria-label="Ngữ cảnh trò chuyện">
+            <h4 class="tracker-title"><i class="fa-solid fa-moon"></i> Mavis đang đồng hành cùng bạn</h4>
+            <p class="talk-subtitle">Chat và Voice dùng chung nội dung trao đổi. Mavis xét hồ sơ, dữ liệu đã đánh giá và
+              giờ hiện tại để trả lời.</p>
+            <div id="talk-context-summary" class="talk-context-summary"></div>
+            <p class="talk-subtitle">Mavis hỗ trợ thói quen ngủ, không chẩn đoán bệnh hoặc kê đơn. Gợi ý trong cuộc trò
+              chuyện chưa tự thêm vào lịch.</p>
+          </aside>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: DAILY SCHEDULE SCANNER (CHECK LỊCH TRÌNH TẠI APP LỊCH) -->
+      <section id="calendar-scanner-section" class="card glass-card schedule-scanner-card" style="display: none;">
+        <div class="card-header">
+          <div class="header-title-group">
+            <span class="header-icon"><i class="fa-solid fa-calendar-check"></i></span>
+            <div>
+              <h3 class="card-title">Quét Lịch Trình Công Việc Thực Tế Trong Ngày</h3>
+              <p class="card-subtitle">AI tìm kiếm các khoảng trống (Free Slots) giữa các cuộc họp để chèn vi-hành động
+                2-5 phút cực dễ làm</p>
+            </div>
+          </div>
+          <div class="calendar-actions-wrap">
+            <label class="btn-secondary file-upload-btn">
+              <i class="fa-solid fa-file-import"></i> Nhập file lịch (.ics từ Google Calendar)
+              <input type="file" id="import-ics-input" accept=".ics" style="display: none;">
+            </label>
+            <button id="add-event-quick-btn" class="btn-secondary">
+              <i class="fa-solid fa-plus"></i> Thêm việc bận
+            </button>
+          </div>
+        </div>
+
+        <!-- Calendar Timeline View -->
+        <div class="calendar-scanner-body">
+          <div class="events-list" id="calendar-events-list">
+            <!-- Events injected dynamically by JS -->
+          </div>
+
+          <!-- Free Slots Detection Box -->
+          <div class="free-slots-box" id="free-slots-box">
+            <h4 class="free-slots-title"><i class="fa-solid fa-bolt"></i> Khoảng trống phát hiện trong lịch chiều nay:
+            </h4>
+            <div class="slots-chips-grid" id="slots-chips-grid">
+              <!-- Free slots badges -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- AI LOADING OVERLAY -->
+      <section id="ai-loading-state" class="ai-loading-container" style="display: none;">
+        <div class="neural-pulse-box">
+          <div class="pulsing-brain">
+            <i class="fa-solid fa-brain"></i>
+          </div>
+          <div class="loading-steps">
+            <h4 id="loading-step-title">AI đang chẩn đoán tương quan 5 trụ cột y khoa...</h4>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill" id="loading-progress-bar"></div>
+            </div>
+            <p class="loading-subtext" id="loading-step-desc">Đánh giá nguy cơ kích thích giao cảm, ức chế melatonin và
+              các triệu chứng thể chất...</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- RESULTS DASHBOARD (AFTER 5-PILLAR DIAGNOSIS) -->
+      <section id="results-dashboard" class="results-dashboard-container" style="display: none;">
+
+        <!-- Score Highlights Banner -->
+        <div class="dashboard-grid-cards">
+
+          <!-- Primary Score Card -->
+          <div class="card glass-card score-highlight-card">
+            <div class="score-card-inner">
+              <div class="score-gauge-wrap">
+                <svg class="score-circular-chart" viewBox="0 0 36 36">
+                  <path class="circle-bg"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                  <path class="circle-progress" id="score-circle-path" stroke-dasharray="0, 100"
+                    d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                </svg>
+                <div class="gauge-center-content">
+                  <span class="gauge-number" id="predicted-score-val">--</span>
+                  <span class="gauge-percent">%</span>
+                  <span class="gauge-label">Điểm Dự Đoán</span>
+                </div>
+              </div>
+
+              <div class="score-text-details">
+                <div class="status-badge-wrap">
+                  <span class="status-badge" id="sleep-status-badge">Bình thường</span>
+                  <span class="risk-badge" id="sleep-risk-badge">Cần can thiệp chiều nay</span>
+                </div>
+                <h3 class="score-title" id="score-verdict-title">Dự Báo Chất Lượng Giấc Ngủ Đêm Nay</h3>
+                <p class="score-explanation" id="score-verdict-desc">
+                  Phân tích dựa trên tổng hợp 5 trụ cột y tế.
+                </p>
+                <div class="score-sub-metrics">
+                  <div class="sub-metric">
+                    <span class="sm-label"><i class="fa-regular fa-clock"></i> Thời gian chìm vào giấc ngủ:</span>
+                    <strong class="sm-value" id="latency-val">~28 phút</strong>
+                  </div>
+                  <div class="sub-metric">
+                    <span class="sm-label"><i class="fa-solid fa-bed"></i> Giấc ngủ sâu (Deep NREM):</span>
+                    <strong class="sm-value" id="deep-sleep-val">14% (Kém)</strong>
+                  </div>
+                  <div class="sub-metric">
+                    <span class="sm-label"><i class="fa-solid fa-moon"></i> Giấc ngủ REM (Phục hồi trí não):</span>
+                    <strong class="sm-value" id="rem-sleep-val">18%</strong>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 5 Pillars Radar / Breakdown Card -->
+          <div class="card glass-card biometric-card">
+            <h4 class="card-inner-title"><i class="fa-solid fa-chart-simple"></i> Điểm Rủi Ro 5 Trụ Cột Y Khoa</h4>
+
+            <div class="biometric-bars-group">
+              <!-- Pillar 1 -->
+              <div class="bio-bar-item">
+                <div class="bio-bar-header">
+                  <span>1. Tâm lý & Stress (Cortisol)</span>
+                  <strong id="bar-p1-text">Vừa phải</strong>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="bar-p1-fill" style="width: 50%;"></div>
+                </div>
+              </div>
+
+              <!-- Pillar 2 -->
+              <div class="bio-bar-item">
+                <div class="bio-bar-header">
+                  <span>2. Môi trường (Ánh sáng/Nhiệt độ)</span>
+                  <strong id="bar-p2-text">Tốt</strong>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="bar-p2-fill" style="width: 25%;"></div>
+                </div>
+              </div>
+
+              <!-- Pillar 3 -->
+              <div class="bio-bar-item">
+                <div class="bio-bar-header">
+                  <span>3. Lối sống (Caffeine / Rượu / Điện thoại)</span>
+                  <strong id="bar-p3-text">Nguy cơ cao</strong>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="bar-p3-fill" style="width: 75%;"></div>
+                </div>
+              </div>
+
+              <!-- Pillar 4 -->
+              <div class="bio-bar-item">
+                <div class="bio-bar-header">
+                  <span>4. Sinh lý & Nội tiết (Tuổi/Hormone)</span>
+                  <strong id="bar-p4-text">Bình thường</strong>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="bar-p4-fill" style="width: 30%;"></div>
+                </div>
+              </div>
+
+              <!-- Pillar 5 -->
+              <div class="bio-bar-item">
+                <div class="bio-bar-header">
+                  <span>5. Bệnh lý & Đau nhức (GERD / Xương khớp)</span>
+                  <strong id="bar-p5-text">Ổn định</strong>
+                </div>
+                <div class="bar-track">
+                  <div class="bar-fill" id="bar-p5-fill" style="width: 20%;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Next-Day Brain Performance Card -->
+          <div class="card glass-card brain-performance-card">
+            <div class="brain-card-header">
+              <span class="brain-icon"><i class="fa-solid fa-brain"></i></span>
+              <div>
+                <h4 class="card-inner-title">Dự Báo Não Bộ Sáng Mai</h4>
+                <p class="card-inner-subtitle">So sánh nếu KHÔNG can thiệp vs. SAU KHI làm theo lịch AI</p>
+              </div>
+            </div>
+
+            <div class="brain-compare-grid">
+              <div class="compare-box bad">
+                <div class="compare-tag"><i class="fa-solid fa-triangle-exclamation"></i> Nếu không can thiệp</div>
+                <div class="brain-metric-num" id="no-action-focus">45%</div>
+                <p class="compare-text" id="no-action-text">Não bộ bị sương mù (Brain Fog), khó tập trung vào buổi sáng,
+                  phản xạ chậm, dễ bực bội.</p>
+              </div>
+              <div class="compare-box good">
+                <div class="compare-tag"><i class="fa-solid fa-circle-check"></i> Sau khi theo lịch AI</div>
+                <div class="brain-metric-num" id="action-focus">94%</div>
+                <p class="compare-text" id="action-text">Tỉnh táo sau 15p thức dậy, trí nhớ làm việc sắc bén, tinh thần
+                  thoải mái, hiệu suất làm việc đỉnh cao.</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- REAL-TIME ACTION BANNER: CẦN LÀM GÌ NGAY BÂY GIỜ? -->
+        <div class="card glass-card real-time-action-card">
+          <div class="rt-header">
+            <div class="rt-pulse-dot"></div>
+            <h3 class="rt-title"><i class="fa-solid fa-bolt"></i> Lời Khuyên Theo Thời Gian Thực (Ngay Lúc Này: <span
+                id="rt-clock-stamp">09:55</span>)</h3>
+          </div>
+          <div class="rt-content" id="realtime-action-content">
+            <!-- Injected by JS based on current hour and diagnosis -->
+          </div>
+        </div>
+
+        <!-- SMART INTEGRATED SCHEDULE (COMBINED WITH USER'S CALENDAR & MICRO-ACTIONS) -->
+        <div class="card glass-card schedule-card">
+          <div class="schedule-header">
+            <div>
+              <div class="badge-accent"><i class="fa-solid fa-calendar-check"></i> Lịch Trình Tự Động Xếp Vào Khoảng
+                Trống Công Việc</div>
+              <h2 class="schedule-title">Các Vi-Hành Động Dễ Làm Chiều & Tối (Không Tốn Thời Gian)</h2>
+              <p class="schedule-desc">Được tối ưu xen kẽ vào giữa các khoảng trống công việc của bạn. Mỗi hành động chỉ
+                tốn 2 đến 5 phút!</p>
+            </div>
+            <div class="schedule-actions">
+              <button id="download-ics-btn" class="btn-secondary"
+                title="Tải file lịch .ics để thêm vào Google Calendar / Apple Calendar">
+                <i class="fa-solid fa-calendar-plus"></i>
+                <span>Thêm vào Google Calendar (.ics)</span>
+              </button>
+            </div>
+          </div>
+
+          <!-- Readiness Progress Bar -->
+          <div class="readiness-progress-section">
+            <div class="readiness-info">
+              <span><i class="fa-solid fa-circle-check"></i> Tiến độ hoàn thành các vi-hành động:</span>
+              <strong id="readiness-percent">0/5 nhiệm vụ (0%)</strong>
+            </div>
+            <div class="progress-bar-wrap">
+              <div class="progress-bar-fill fill-emerald" id="readiness-bar-fill" style="width: 0%;"></div>
+            </div>
+          </div>
+
+          <!-- Dynamic Timeline items -->
+          <div class="timeline-container" id="schedule-timeline">
+            <!-- Timeline items injected by JS -->
+          </div>
+        </div>
+
+        <!-- SPECIALIZED NUTRITION & HEALTH INTERVENTIONS -->
+        <div class="card glass-card nutrition-health-card">
+          <div class="card-header">
+            <div class="header-title-group">
+              <span class="header-icon"><i class="fa-solid fa-utensils"></i></span>
+              <div>
+                <h3 class="card-title">Hướng Dẫn Ăn Uống & Khắc Phục Bệnh Lý Siêu Dễ Làm</h3>
+                <p class="card-subtitle">Thực đơn tối chuẩn bị dưới 10 phút và giải pháp đặc trị cho từng vấn đề sức
+                  khỏe</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="nutrition-grid-boxes">
+            <!-- Easy Food Box -->
+            <div class="sub-card">
+              <h4 class="sub-card-title"><i class="fa-solid fa-bowl-food"></i> Thực Đơn Bữa Tối Nấu Nhanh (Dưới 10 Phút)
+              </h4>
+              <ul class="easy-list" id="dinner-food-list">
+                <!-- Injected by JS -->
+              </ul>
+            </div>
+
+            <!-- Targeted Health Hack Box -->
+            <div class="sub-card">
+              <h4 class="sub-card-title"><i class="fa-solid fa-kit-medical"></i> Giải Pháp Đặc Trị Theo Triệu Chứng Của
+                Bạn</h4>
+              <div id="targeted-health-content">
+                <!-- Injected by JS -->
+              </div>
+            </div>
+
+            <!-- Micro-habits Box -->
+            <div class="sub-card">
+              <h4 class="sub-card-title"><i class="fa-solid fa-person-walking"></i> Vi-Vận Động 3 Phút Tại Bàn Làm Việc
+              </h4>
+              <ul class="easy-list" id="desk-exercise-list">
+                <!-- Injected by JS -->
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- Integrated Audio Player Modal / Drawer (Built with Web Audio API) -->
+      <section id="sound-player-drawer" class="card glass-card sound-player-drawer" style="display: none;">
+        <div class="player-header">
+          <div class="player-title-wrap">
+            <div class="sound-wave-icon"><i class="fa-solid fa-radio"></i></div>
+            <div>
+              <h3 class="player-title">Sleep Soundscape & Sóng Não Delta (Web Audio API)</h3>
+              <p class="player-subtitle">Tạo âm thanh thư giãn thời gian thực trực tiếp trên trình duyệt, không cần tải
+                nhạc ngoài</p>
+            </div>
+          </div>
+          <button id="close-player-btn" class="btn-icon" title="Đóng bảng âm thanh"><i
+              class="fa-solid fa-xmark"></i></button>
+        </div>
+
+        <div class="sound-channels-grid">
+          <!-- Channel 1: Binaural Delta Beats -->
+          <div class="channel-card">
+            <div class="channel-info">
+              <div class="channel-name">
+                <i class="fa-solid fa-wave-square"></i>
+                <div>
+                  <strong>Sóng Não Delta (Binaural Beats 4Hz)</strong>
+                  <small>Đồng bộ tần số vỏ não, ru ngủ nhanh</small>
+                </div>
+              </div>
+              <button class="channel-toggle-btn" data-channel="binaural"><i class="fa-solid fa-play"></i> Bật</button>
+            </div>
+            <div class="channel-volume-wrap">
+              <i class="fa-solid fa-volume-low"></i>
+              <input type="range" class="channel-slider" data-channel="binaural" min="0" max="100" value="70">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+          </div>
+
+          <!-- Channel 2: Rain Sound (Pink Noise) -->
+          <div class="channel-card">
+            <div class="channel-info">
+              <div class="channel-name">
+                <i class="fa-solid fa-cloud-rain"></i>
+                <div>
+                  <strong>Tiếng Mưa Rào Êm Dịu (Pink Noise)</strong>
+                  <small>Che phủ tiếng ồn xe cộ, dịu tai</small>
+                </div>
+              </div>
+              <button class="channel-toggle-btn" data-channel="rain"><i class="fa-solid fa-play"></i> Bật</button>
+            </div>
+            <div class="channel-volume-wrap">
+              <i class="fa-solid fa-volume-low"></i>
+              <input type="range" class="channel-slider" data-channel="rain" min="0" max="100" value="60">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+          </div>
+
+          <!-- Channel 3: Ocean Waves -->
+          <div class="channel-card">
+            <div class="channel-info">
+              <div class="channel-name">
+                <i class="fa-solid fa-water"></i>
+                <div>
+                  <strong>Sóng Biển Ban Đêm (Deep Ocean)</strong>
+                  <small>Nhịp thở của đại dương, hạ nhịp tim</small>
+                </div>
+              </div>
+              <button class="channel-toggle-btn" data-channel="ocean"><i class="fa-solid fa-play"></i> Bật</button>
+            </div>
+            <div class="channel-volume-wrap">
+              <i class="fa-solid fa-volume-low"></i>
+              <input type="range" class="channel-slider" data-channel="ocean" min="0" max="100" value="50">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+          </div>
+
+          <!-- Channel 4: Tibetan Singing Bowl -->
+          <div class="channel-card">
+            <div class="channel-info">
+              <div class="channel-name">
+                <i class="fa-solid fa-bell"></i>
+                <div>
+                  <strong>Chuông Xoay Thiền (Singing Bowl)</strong>
+                  <small>Tần số 432Hz an định tinh thần</small>
+                </div>
+              </div>
+              <button class="channel-toggle-btn" data-channel="bowl"><i class="fa-solid fa-play"></i> Rung
+                chuông</button>
+            </div>
+            <div class="channel-volume-wrap">
+              <i class="fa-solid fa-volume-low"></i>
+              <input type="range" class="channel-slider" data-channel="bowl" min="0" max="100" value="65">
+              <i class="fa-solid fa-volume-high"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="player-bottom-bar">
+          <div class="timer-control">
+            <span><i class="fa-regular fa-clock"></i> Tự động tắt sau:</span>
+            <button class="timer-chip" data-timer="15">15 Phút</button>
+            <button class="timer-chip active" data-timer="30">30 Phút</button>
+            <button class="timer-chip" data-timer="60">60 Phút</button>
+            <button class="timer-chip" data-timer="0">Vô tận</button>
+          </div>
+          <button id="master-mute-btn" class="btn-secondary"><i class="fa-solid fa-volume-xmark"></i> Dừng Tất
+            Cả</button>
+        </div>
+      </section>
+
+      <!-- History Modal / Log Viewer -->
+      <div id="history-modal" class="modal-overlay" style="display: none;">
+        <div class="modal-content glass-card">
+          <div class="modal-header">
+            <h3><i class="fa-solid fa-clock-rotate-left"></i> Lịch Sử Chẩn Đoán 5 Trụ Cột</h3>
+            <button id="close-history-modal" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+          </div>
+          <div class="modal-body" id="history-logs-list">
+            <!-- List of past entries will be rendered here -->
+          </div>
+        </div>
+      </div>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="app-footer">
+      <div class="footer-content">
+        <p><strong>SleepSync AI</strong> — Được xây dựng theo nguyên lý Y Khoa & Nhịp Sinh Học (Circadian Biology &
+          Chronobiology).</p>
+        <p class="copyright">© 2026 SleepSync AI. Đồng hành cùng giấc ngủ sâu và năng suất não bộ vượt trội.</p>
+      </div>
+    </footer>
+
+  </div>
+
+  <!-- ========================================================
+       USER PROFILE DRAWER (SLIDE-OVER FROM RIGHT)
+       Designed exactly according to user request & reference image
+       ======================================================== -->
+  <div id="user-profile-drawer-overlay" class="profile-drawer-overlay" style="display: none;"></div>
+
+  <aside id="user-profile-drawer" class="profile-drawer" aria-label="Hồ Sơ Cá Nhân Người Dùng">
+    <div class="profile-drawer-container">
+
+      <!-- Drawer Top Header -->
+      <div class="profile-drawer-header">
+        <div class="drawer-header-title">
+          <span class="drawer-header-icon-box">
+            <i class="fa-solid fa-moon"></i>
+          </span>
+          <h2>Hồ Sơ SleepSync ID</h2>
+        </div>
+        <button type="button" id="close-profile-drawer-btn" class="drawer-close-btn" title="Đóng hồ sơ"
+          onclick="window.closeProfileDrawer ? window.closeProfileDrawer() : (document.getElementById('user-profile-drawer').classList.remove('open'), document.getElementById('user-profile-drawer-overlay').classList.remove('active'), setTimeout(() => document.getElementById('user-profile-drawer-overlay').style.display='none', 280))">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Celestial Cover Banner & Avatar -->
+      <div class="profile-cover-banner">
+        <div class="profile-cover-stars"></div>
+        <div class="profile-cover-gradient-overlay"></div>
+      </div>
+
+      <!-- Identity Card with Overlapping Avatar -->
+      <div class="profile-identity-card-v2">
+        <div class="profile-avatar-outer">
+          <div class="profile-avatar-large" id="profile-card-avatar">
+            <!-- Dynamic Avatar SVG / Icon -->
+          </div>
+          <button type="button" class="btn-change-avatar-badge" id="btn-quick-change-avatar" title="Đổi ảnh đại diện">
+            <i class="fa-solid fa-camera"></i>
+          </button>
+        </div>
+
+        <div class="profile-name-row">
+          <h3 class="profile-name-text" id="profile-display-name">Nguyễn Hoàng Hiếu Liêm</h3>
+        </div>
+        <div class="profile-role-badge" id="profile-display-role">
+          <i class="fa-solid fa-user-tag"></i> <span>IT</span>
+        </div>
+        <p class="profile-bio-text" id="profile-display-bio">
+          Mục tiêu cải thiện chất lượng giấc ngủ sâu NREM 🚀
+        </p>
+
+        <!-- Gamified Streak Stats Strip -->
+        <div class="profile-streak-stats">
+          <div class="streak-stat-item streak-flame">
+            <div class="streak-stat-icon-wrap"><i class="fa-solid fa-fire"></i></div>
+            <div class="streak-stat-content">
+              <span class="streak-stat-value" id="profile-stat-streak">1 ngày</span>
+              <span class="streak-stat-label">Chuỗi duy trì</span>
+            </div>
+          </div>
+          <div class="streak-stat-item streak-score">
+            <div class="streak-stat-icon-wrap"><i class="fa-solid fa-star"></i></div>
+            <div class="streak-stat-content">
+              <span class="streak-stat-value" id="profile-stat-score">88%</span>
+              <span class="streak-stat-label">Chất lượng ngủ</span>
+            </div>
+          </div>
+          <div class="streak-stat-item streak-target">
+            <div class="streak-stat-icon-wrap"><i class="fa-solid fa-moon"></i></div>
+            <div class="streak-stat-content">
+              <span class="streak-stat-value" id="profile-stat-target">23:00</span>
+              <span class="streak-stat-label">Giờ ngủ đích</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drawer Navigation Tabs: 3 Modern Segmented Tabs -->
+      <div class="profile-nav-tabs">
+        <button type="button" class="drawer-tab-btn active" id="drawer-tab-profile">
+          <i class="fa-solid fa-user"></i>
+          <span>Tổng Quan</span>
+        </button>
+        <button type="button" class="drawer-tab-btn" id="drawer-tab-edit">
+          <i class="fa-solid fa-pen"></i>
+          <span>Chỉnh Sửa</span>
+        </button>
+        <button type="button" class="drawer-tab-btn" id="drawer-tab-switch">
+          <i class="fa-solid fa-users"></i>
+          <span>Tài Khoản</span>
+        </button>
+      </div>
+
+      <!-- TAB PANE 1: TỔNG QUAN HỒ SƠ (OVERVIEW) -->
+      <div class="drawer-tab-pane active" id="pane-user-profile">
+        <!-- 6-Card Compact Specs Dashboard -->
+        <div class="profile-section-title">
+          <i class="fa-solid fa-dna text-cyan"></i>
+          <span>CHỈ SỐ THÓI QUEN SINH HỌC</span>
+        </div>
+
+        <div class="profile-details-grid">
+          <div class="detail-card">
+            <div class="detail-icon-box cyan"><i class="fa-solid fa-user"></i></div>
+            <div class="detail-text-col">
+              <span class="detail-label">Tuổi tác</span>
+              <span class="detail-value" id="profile-display-age">21 tuổi</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon-box indigo"><i class="fa-solid fa-briefcase"></i></div>
+            <div class="detail-text-col">
+              <span class="detail-label">Nghề nghiệp</span>
+              <span class="detail-value" id="profile-display-occupation">IT</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon-box emerald"><i class="fa-solid fa-phone"></i></div>
+            <div class="detail-text-col">
+              <span class="detail-label">Điện thoại</span>
+              <span class="detail-value" id="profile-display-phone">0762880421</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon-box amber"><i class="fa-regular fa-clock"></i></div>
+            <div class="detail-text-col">
+              <span class="detail-label">Giờ ngủ đích</span>
+              <span class="detail-value" id="profile-display-bedtime">23:00</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon-box sky"><i class="fa-solid fa-sun"></i></div>
+            <div class="detail-text-col">
+              <span class="detail-label">Giờ thức dậy</span>
+              <span class="detail-value" id="profile-display-waketime">06:30</span>
+            </div>
+          </div>
+          <div class="detail-card">
+            <div class="detail-icon-box rose"><i class="fa-solid fa-bolt"></i></div>
+            <div class="detail-text-col">
+              <span class="detail-label">Thể lực nền</span>
+              <span class="detail-value" id="profile-display-fitness">Trung bình</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Section: Tiền sử sức khỏe & Hạn chế -->
+        <div class="profile-history-box">
+          <div class="history-box-label">
+            <i class="fa-solid fa-shield-heart text-cyan"></i>
+            <span>Tiền sử & Yếu tố cần lưu ý:</span>
+          </div>
+          <div class="history-tags-wrap" id="profile-display-conditions">
+            <!-- Dynamic badges injected by JS -->
+          </div>
+        </div>
+
+        <!-- Direct Edit Button (Switches to Tab 2) -->
+        <button type="button" class="btn-profile-edit" id="btn-goto-edit-tab">
+          <i class="fa-solid fa-pen-to-square"></i>
+          <span>Chỉnh Sửa Hồ Sơ & Thói Quen</span>
+        </button>
+
+        <!-- Medical Disclaimer Card -->
+        <button type="button" class="drawer-disclaimer-card" id="drawer-disclaimer-details-btn">
+          <div class="disclaimer-card-icon">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div class="disclaimer-card-info">
+            <strong class="disclaimer-card-title">Miễn Trừ Trách Nhiệm Y Tế</strong>
+            <span class="disclaimer-card-desc">Bảo vệ pháp lý & tư vấn phi dược lý</span>
+          </div>
+          <span class="btn-drawer-detail-pill">Chi tiết <i class="fa-solid fa-chevron-right"></i></span>
+        </button>
+      </div>
+
+      <!-- TAB PANE 2: CHỈNH SỬA HỒ SƠ TRỰC TIẾP TRONG DRAWER -->
+      <div class="drawer-tab-pane" id="pane-user-edit" style="display: none;">
+        <form id="drawer-profile-edit-form">
+          <!-- Avatar Picker -->
+          <div class="avatar-picker-label">
+            <span><i class="fa-solid fa-masks-theater"></i> Chọn Avatar đại diện:</span>
+            <span style="font-size: 0.72rem; color: #38BDF8;">Chạm để chọn</span>
+          </div>
+          <div class="avatar-picker-grid" id="drawer-avatar-picker-grid">
+            <div class="avatar-pick-item selected" data-avatar="programmer_laptop" title="Kỹ Sư IT">
+              👨‍💻
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="woman_professional" title="Nữ Công Sở">
+              👩‍💼
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="doctor_health" title="Bác Sĩ Y Tế">
+              👨‍⚕️
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="sleep_owl" title="Cú Đêm Thông Thái">
+              🦉
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="zen_meditator" title="Thiền Định & Yoga">
+              🧘
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="nature_moon" title="Mặt Trăng & Ngôi Sao">
+              🌙
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+          </div>
+          <input type="hidden" id="drawer-edit-avatar" value="programmer_laptop">
+
+          <div class="form-group">
+            <label class="form-label" for="drawer-edit-fullname"><i class="fa-solid fa-user"></i> Họ và Tên (*)</label>
+            <input type="text" id="drawer-edit-fullname" class="form-input" required placeholder="Họ và tên của bạn">
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="drawer-edit-phone"><i class="fa-solid fa-phone"></i> Số Điện Thoại</label>
+              <input type="tel" id="drawer-edit-phone" class="form-input" placeholder="0981...">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="drawer-edit-occupation"><i class="fa-solid fa-briefcase"></i> Nghề
+                Nghiệp</label>
+              <input type="text" id="drawer-edit-occupation" class="form-input" placeholder="Ví dụ: Kỹ sư / HR">
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="drawer-edit-age"><i class="fa-solid fa-cake-candles"></i> Tuổi & Giới
+                tính</label>
+              <input type="text" id="drawer-edit-age" class="form-input" placeholder="Ví dụ: 30 tuổi (Nam)">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="drawer-edit-fitness"><i class="fa-solid fa-battery-half"></i> Thể
+                Lực</label>
+              <select id="drawer-edit-fitness" class="form-input">
+                <option value="Rất tốt">Rất tốt</option>
+                <option value="Khá">Khá</option>
+                <option value="Trung bình" selected>Trung bình</option>
+                <option value="Hay mệt mỏi">Hay mệt mỏi</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="drawer-edit-bedtime"><i class="fa-regular fa-clock"></i> Giờ Ngủ
+                Đích</label>
+              <input type="time" id="drawer-edit-bedtime" class="form-input" value="23:00">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="drawer-edit-waketime"><i class="fa-solid fa-sun"></i> Giờ Thức Dậy</label>
+              <input type="time" id="drawer-edit-waketime" class="form-input" value="06:30">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="drawer-edit-bio"><i class="fa-regular fa-comment-dots"></i> Mục Tiêu Giấc Ngủ
+              (Bio)</label>
+            <input type="text" id="drawer-edit-bio" class="form-input"
+              placeholder="Ví dụ: Cải thiện ngủ sâu NREM, bớt thức giấc nửa đêm...">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label"><i class="fa-solid fa-shield-halved"></i> Tiền Sử & Yếu Tố Thể Chất:</label>
+            <div
+              style="display: flex; flex-direction: column; gap: 0.4rem; background: rgba(2, 6, 23, 0.4); padding: 0.75rem; border-radius: 10px; font-size: 0.82rem;">
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: #E2E8F0;">
+                <input type="checkbox" name="drawer-conditions" value="Đau mỏi cổ vai gáy"> Đau mỏi cổ vai gáy / cột
+                sống
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: #E2E8F0;">
+                <input type="checkbox" name="drawer-conditions" value="Căng thẳng deadline"> Căng thẳng công việc / áp
+                lực deadline
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: #E2E8F0;">
+                <input type="checkbox" name="drawer-conditions" value="Ngồi nhiều máy tính"> Ngồi máy tính liên tục >6
+                tiếng
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: #E2E8F0;">
+                <input type="checkbox" name="drawer-conditions" value="Trào ngược dạ dày GERD"> Trào ngược dạ dày thực
+                quản (GERD)
+              </label>
+              <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: #E2E8F0;">
+                <input type="checkbox" name="drawer-conditions" value="Khó ngủ sau 1h sáng"> Khó vào giấc / trằn trọc
+                >30 phút
+              </label>
+            </div>
+          </div>
+
+          <button type="submit" class="auth-submit-btn" id="btn-save-drawer-profile" style="margin-top: 1rem;">
+            <i class="fa-solid fa-floppy-disk"></i>
+            <span>Lưu Thông Tin Hồ Sơ</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- TAB PANE 3: CHUYỂN ĐỔI TÀI KHOẢN (FACEBOOK ACCOUNT SWITCHER) -->
+      <div class="drawer-tab-pane" id="pane-user-switch" style="display: none;">
+        <div class="profile-section-title">
+          <i class="fa-solid fa-users"></i>
+          <span>TÀI KHOẢN TRÊN THIẾT BỊ NÀY</span>
+        </div>
+        <p style="font-size: 0.8rem; color: #94A3B8; margin: 0 0 0.8rem;">
+          <i class="fa-solid fa-shield-halved text-cyan"></i> Chỉ hiển thị các tài khoản đã đăng nhập trên máy này. Yêu
+          cầu mật khẩu khi chuyển đổi:
+        </p>
+
+        <!-- Account Switcher Dynamic List -->
+        <div class="account-switch-list" id="account-switch-list-container">
+          <!-- Dynamic items rendered by JS -->
+        </div>
+
+        <button type="button" class="btn-profile-edit" id="btn-switch-add-account" style="margin-top: 0.5rem;">
+          <i class="fa-solid fa-user-plus"></i>
+          <span>+ Đăng Nhập Hoặc Đăng Ký Tài Khoản Khác</span>
+        </button>
+      </div>
+
+      <!-- Drawer Bottom Action Row -->
+      <div class="drawer-bottom-actions">
+        <button type="button" class="btn-drawer-action switch-account" id="drawer-quick-switch-btn"
+          title="Đổi tài khoản">
+          <i class="fa-solid fa-arrow-right-arrow-left"></i>
+          <span>Đổi Tài Khoản</span>
+        </button>
+        <button type="button" class="btn-drawer-action logout-account" id="drawer-logout-btn"
+          title="Đăng xuất khỏi hệ thống">
+          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+          <span>Đăng Xuất</span>
+        </button>
+      </div>
+
+    </div>
+  </aside>
+
+  <!-- ========================================================
+       MODAL: CHỈNH SỬA HỒ SƠ CÁ NHÂN (EDIT PROFILE MODAL)
+       ======================================================== -->
+  <div id="edit-profile-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content glass-card modal-profile-editor">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-user-pen text-primary"></i> Chỉnh Sửa Thông Tin Hồ Sơ Cá Nhân</h3>
+        <button type="button" id="close-edit-profile-modal" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <form id="edit-profile-form" class="modal-body profile-form-body">
+
+        <div class="form-grid-2col">
+          <div class="form-group">
+            <label class="form-label" for="edit-fullname"><i class="fa-solid fa-user"></i> Họ và Tên</label>
+            <input type="text" id="edit-fullname" class="form-input" required placeholder="Ví dụ: Nguyễn Văn Hùng">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="edit-phone"><i class="fa-solid fa-phone"></i> Số Điện Thoại</label>
+            <input type="tel" id="edit-phone" class="form-input" placeholder="Ví dụ: 0981 234 567">
+          </div>
+        </div>
+
+        <div class="form-grid-2col">
+          <div class="form-group">
+            <label class="form-label" for="edit-occupation"><i class="fa-solid fa-briefcase"></i> Nghề Nghiệp / Chức
+              Vụ</label>
+            <input type="text" id="edit-occupation" class="form-input" placeholder="Ví dụ: Kỹ Sư IT & Công Trình">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="edit-age"><i class="fa-solid fa-cake-candles"></i> Tuổi tác & Giới
+              tính</label>
+            <input type="text" id="edit-age" class="form-input" placeholder="Ví dụ: 30 tuổi (Nam)">
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="edit-bio"><i class="fa-solid fa-quote-left"></i> Ghi Chú & Mục Tiêu Giấc Ngủ
+            (Bio)</label>
+          <input type="text" id="edit-bio" class="form-input"
+            placeholder="Ví dụ: Thức khuya & mê cà phê • Đang cải thiện giấc ngủ sâu NREM 💤">
+        </div>
+
+        <div class="form-grid-3col">
+          <div class="form-group">
+            <label class="form-label" for="edit-bedtime"><i class="fa-regular fa-clock"></i> Giờ Ngủ Mục Tiêu</label>
+            <input type="time" id="edit-bedtime" class="form-input" value="23:00">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="edit-waketime"><i class="fa-solid fa-sun"></i> Giờ Thức Dậy</label>
+            <input type="time" id="edit-waketime" class="form-input" value="06:30">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="edit-fitness"><i class="fa-solid fa-battery-half"></i> Thể Lực Nền</label>
+            <select id="edit-fitness" class="form-input form-select">
+              <option value="Yếu">Yếu (Dễ mệt mỏi)</option>
+              <option value="Trung bình" selected>Trung bình</option>
+              <option value="Khá">Khá (Tập thể dục đều)</option>
+              <option value="Tốt">Tốt (Thể lực bền bỉ)</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label"><i class="fa-solid fa-shield-heart"></i> Tiền Sử Sức Khỏe & Thói Quen Hạn
+            Chế</label>
+          <div class="conditions-checkbox-grid">
+            <label class="cond-check-item">
+              <input type="checkbox" name="edit-conditions" value="Đau mỏi cổ vai gáy" checked>
+              <span>🩺 Đau mỏi cổ vai gáy</span>
+            </label>
+            <label class="cond-check-item">
+              <input type="checkbox" name="edit-conditions" value="Căng thẳng deadline" checked>
+              <span>🩺 Căng thẳng deadline</span>
+            </label>
+            <label class="cond-check-item">
+              <input type="checkbox" name="edit-conditions" value="Ngồi nhiều máy tính" checked>
+              <span>🛡 Ngồi nhiều máy tính</span>
+            </label>
+            <label class="cond-check-item">
+              <input type="checkbox" name="edit-conditions" value="Trào ngược dạ dày (GERD)">
+              <span>🧪 Trào ngược dạ dày (GERD)</span>
+            </label>
+            <label class="cond-check-item">
+              <input type="checkbox" name="edit-conditions" value="Thức giấc tiểu đêm">
+              <span>💧 Thức giấc tiểu đêm</span>
+            </label>
+            <label class="cond-check-item">
+              <input type="checkbox" name="edit-conditions" value="Mất ngủ kéo dài">
+              <span>😴 Mất ngủ kéo dài</span>
+            </label>
+          </div>
+        </div>
+
+        <div class="modal-footer-actions">
+          <button type="button" id="cancel-edit-profile-btn" class="btn-secondary">Hủy Bỏ</button>
+          <button type="submit" class="btn-primary"><i class="fa-solid fa-floppy-disk"></i> Lưu Hồ Sơ Vào
+            Database</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL: ĐỔI TÀI KHOẢN & ĐĂNG NHẬP (SWITCH ACCOUNT & AUTH)
+       ======================================================== -->
+  <div id="switch-account-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content glass-card modal-auth-manager">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-users text-primary"></i> Quản Lý Tài Khoản & Đăng Nhập</h3>
+        <button type="button" id="close-switch-modal" class="btn-icon"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+
+        <!-- Cloud Account Sync Login Box (Web & Mobile Sync via 1 Account) -->
+        <div class="cloud-login-quick-box"
+          style="margin-bottom: 1.25rem; background: rgba(15, 23, 42, 0.7); border: 1px solid rgba(56, 189, 248, 0.35); border-radius: 12px; padding: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.3);">
+          <label style="display: block; font-size: 0.82rem; font-weight: 700; color: #38BDF8; margin-bottom: 0.4rem;">
+            <i class="fa-solid fa-cloud-arrow-down"></i> Đăng nhập 1 tài khoản để đồng bộ Web & Mobile:
+          </label>
+          <div style="display: flex; gap: 0.5rem;">
+            <input type="text" id="cloud-login-phone-input" class="form-input"
+              placeholder="Nhập SĐT (VD: 0981 234 567 hoặc ID)"
+              style="font-size: 0.85rem; padding: 0.6rem 0.8rem; flex: 1;">
+            <button type="button" id="btn-cloud-login-submit" class="btn-primary"
+              style="padding: 0.6rem 1.1rem; font-size: 0.85rem; white-space: nowrap;">
+              <i class="fa-solid fa-arrow-right-to-bracket"></i> Đồng Bộ
+            </button>
+          </div>
+          <small style="display: block; color: var(--text-dim); font-size: 0.75rem; margin-top: 0.4rem;">
+            Nhập số điện thoại tài khoản để tự động tải hồ sơ, bài test và vi-hành động từ máy chủ về thiết bị này.
+          </small>
+        </div>
+
+        <div class="auth-section-title">
+          <span>Danh Sách Tài Khoản Trong Database Thiết Bị</span>
+        </div>
+        <div class="user-accounts-list" id="accounts-database-list">
+          <!-- Dynamic Account Cards rendered by JS -->
+        </div>
+
+        <div class="create-new-user-box">
+          <button type="button" class="btn-create-account-toggle" id="toggle-new-user-form-btn">
+            <i class="fa-solid fa-user-plus"></i>
+            <span>+ Tạo & Đăng Ký Hồ Sơ Người Dùng Mới</span>
+          </button>
+
+          <form id="new-user-form" class="new-user-form" style="display: none;">
+            <div class="form-grid-2col">
+              <div class="form-group">
+                <label class="form-label">Họ và tên</label>
+                <input type="text" id="new-fullname" class="form-input" required placeholder="Họ và tên">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Nghề nghiệp</label>
+                <input type="text" id="new-role" class="form-input" required placeholder="Nghề nghiệp / Lĩnh vực">
+              </div>
+            </div>
+            <div class="form-grid-2col">
+              <div class="form-group">
+                <label class="form-label">Số điện thoại</label>
+                <input type="tel" id="new-phone" class="form-input" placeholder="Số điện thoại">
+              </div>
+              <div class="form-group">
+                <label class="form-label">Tuổi & Giới tính</label>
+                <input type="text" id="new-age" class="form-input" placeholder="Ví dụ: 29 tuổi (Nữ)">
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label">Mục tiêu giấc ngủ (Bio)</label>
+              <input type="text" id="new-bio" class="form-input" placeholder="Mục tiêu cải thiện giấc ngủ...">
+            </div>
+            <button type="submit" class="btn-primary" style="width: 100%;">
+              <i class="fa-solid fa-user-check"></i> Tạo Hồ Sơ & Đăng Nhập Ngay
+            </button>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL: TUYÊN BỐ MIỄN TRỪ TRÁCH NHIỆM Y TẾ (MATCHING IMAGE 2)
+       ======================================================== -->
+  <div id="disclaimer-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content glass-card modal-disclaimer-card">
+      <div class="modal-header disclaimer-modal-header">
+        <div class="disclaimer-title-wrap">
+          <span class="disclaimer-badge-icon">
+            <i class="fa-solid fa-square-plus"></i>
+          </span>
+          <h3>Tuyên Bố Miễn Trừ Trách Nhiệm Y Tế</h3>
+        </div>
+        <button type="button" id="close-disclaimer-modal-btn" class="drawer-close-btn" title="Đóng"><i
+            class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body disclaimer-modal-body">
+        <div class="disclaimer-policy-item">
+          <p><strong>1. Mục đích ứng dụng:</strong> SleepSync AI được thiết kế như một trợ lý theo dõi nhịp sinh học và
+            giáo dục sức khỏe lối sống. Mọi thuật toán phân tích điểm số giấc ngủ, thời gian tiềm phục (Sleep Latency)
+            và các vi-hành động được xây dựng dựa trên các nghiên cứu công bố về Khoa học Nhịp sinh học (Chronobiology)
+            và Vệ sinh giấc ngủ (Sleep Hygiene).</p>
+        </div>
+
+        <div class="disclaimer-policy-item">
+          <p><strong>2. Không cấu thành quan hệ bác sĩ – bệnh nhân:</strong> Việc sử dụng SleepSync AI không tạo lập bất
+            kỳ mối quan hệ tư vấn y tế hay pháp lý nào giữa người dùng và nhà phát triển.</p>
+        </div>
+
+        <div class="disclaimer-policy-item">
+          <p><strong>3. Trường hợp khẩn cấp:</strong> Nếu bạn trải qua cơn đau ngực dữ dội, khó thở cấp tính, trầm cảm
+            nặng hoặc suy nghĩ tiêu cực, vui lòng gọi cấp cứu y tế 115 hoặc đến bệnh viện gần nhất ngay lập tức.</p>
+        </div>
+
+        <div class="disclaimer-footer-actions">
+          <button type="button" class="btn-ack-disclaimer" id="ack-disclaimer-btn">Đã hiểu & Đóng</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL: BẢO MẬT XÁC THỰC MẬT KHẨU KHI CHUYỂN TÀI KHOẢN
+       ======================================================== -->
+  <div id="switch-account-password-modal" class="modal-overlay" style="display: none; z-index: 1050;">
+    <div class="modal-content glass-card modal-auth-dialog" style="max-width: 440px;">
+      <!-- Modal Header -->
+      <div class="modal-header" style="border-bottom: none; padding-bottom: 0;">
+        <div style="display: flex; align-items: center; gap: 0.85rem;">
+          <div
+            style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #0284C7, #6366F1); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; color: #fff; box-shadow: 0 0 16px rgba(2, 132, 199, 0.4);">
+            <i class="fa-solid fa-shield-halved"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.2rem; font-weight: 800; color: #fff; margin: 0;">Xác Thực Bảo Mật</h3>
+            <span style="font-size: 0.78rem; color: #94A3B8;">Nhập mật khẩu để chuyển sang tài khoản</span>
+          </div>
+        </div>
+        <button type="button" id="close-switch-pwd-modal-btn" class="drawer-close-btn auth-modal-close-btn"
+          title="Đóng">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- Target Account Preview Card -->
+      <div id="switch-target-account-card"
+        style="margin: 1.25rem 0 1rem; padding: 0.85rem 1rem; background: rgba(30, 41, 59, 0.6); border: 1px solid rgba(56, 189, 248, 0.25); border-radius: 14px; display: flex; align-items: center; gap: 0.85rem;">
+        <div class="pill-avatar-wrap" id="switch-target-avatar"
+          style="width: 42px; height: 42px; border-radius: 50%; overflow: hidden; border: 1.5px solid rgba(255, 255, 255, 0.3); display: flex; align-items: center; justify-content: center; background: #1E293B; flex-shrink: 0;">
+        </div>
+        <div style="flex: 1; text-align: left; line-height: 1.3;">
+          <div id="switch-target-name" style="font-weight: 700; color: #fff; font-size: 1rem;">Tài khoản</div>
+          <div id="switch-target-meta" style="font-size: 0.78rem; color: #94A3B8;">Thông tin tài khoản</div>
+        </div>
+      </div>
+
+      <!-- In-Dialog Inline Feedback Banner -->
+      <div id="switch-pwd-feedback" class="auth-feedback-banner" style="display: none; margin-bottom: 1rem;">
+        <i class="fa-solid fa-circle-exclamation feedback-icon"></i>
+        <span id="switch-pwd-feedback-text">Mật khẩu không chính xác!</span>
+      </div>
+
+      <form id="form-switch-password">
+        <input type="hidden" id="switch-target-userid">
+        <input type="hidden" id="switch-target-phone">
+
+        <div class="form-group" style="margin-bottom: 1.25rem;">
+          <label class="form-label" for="switch-pwd-input"><i class="fa-solid fa-key"></i> Mật Khẩu Của Tài Khoản
+            (*)</label>
+          <div class="pwd-input-wrap">
+            <input type="password" id="switch-pwd-input" class="form-input" required
+              placeholder="Nhập mật khẩu để mở khóa tài khoản" autocomplete="current-password">
+            <button type="button" class="pwd-toggle-btn" id="toggle-switch-pwd-btn"><i
+                class="fa-regular fa-eye"></i></button>
+          </div>
+        </div>
+
+        <div style="display: flex; gap: 0.75rem; margin-top: 1.25rem;">
+          <button type="button" class="btn-secondary" id="btn-cancel-switch-pwd"
+            style="flex: 1; padding: 0.85rem; border-radius: 12px;">
+            Hủy Bỏ
+          </button>
+          <button type="submit" class="auth-submit-btn" id="btn-submit-switch-pwd"
+            style="flex: 2; padding: 0.85rem; border-radius: 12px; margin: 0;">
+            <i class="fa-solid fa-lock-open"></i>
+            <span>Đăng nhập</span>
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       MODAL: ĐĂNG NHẬP & ĐĂNG KÝ NGƯỜI DÙNG (USER AUTHENTICATION)
+       ======================================================== -->
+  <div id="user-auth-modal" class="modal-overlay" style="display: none;">
+    <div class="modal-content glass-card modal-auth-dialog">
+      <!-- Modal Header -->
+      <div class="modal-header" style="border-bottom: none; padding-bottom: 0;">
+        <div style="display: flex; align-items: center; gap: 0.85rem;">
+          <div
+            style="width: 44px; height: 44px; border-radius: 14px; background: linear-gradient(135deg, #0284C7, #6366F1); display: flex; align-items: center; justify-content: center; font-size: 1.35rem; color: #fff; box-shadow: 0 0 16px rgba(2, 132, 199, 0.4);">
+            <i class="fa-solid fa-moon"></i>
+          </div>
+          <div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; color: #fff; margin: 0; letter-spacing: -0.01em;">SleepSync
+              ID</h3>
+            <span style="font-size: 0.78rem; color: #94A3B8;">Đăng nhập một chạm</span>
+          </div>
+        </div>
+        <button type="button" id="close-auth-modal-btn" class="drawer-close-btn auth-modal-close-btn"
+          title="Thoát & Quay lại trang gần nhất" onclick="window.closeUserAuthModal && window.closeUserAuthModal()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <!-- In-Dialog Inline Feedback Banner (No Alert Needed) -->
+      <div id="auth-inline-feedback" class="auth-feedback-banner">
+        <i class="fa-solid fa-circle-exclamation feedback-icon"></i>
+        <span id="auth-inline-feedback-text">Thông báo hệ thống</span>
+      </div>
+
+      <!-- Auth Tabs: Đăng Nhập vs Đăng Ký -->
+      <div class="auth-tabs-nav" style="margin-top: 1.1rem;">
+        <button type="button" class="auth-tab-btn active" id="tab-auth-login-btn">
+          <i class="fa-solid fa-arrow-right-to-bracket"></i> Đăng Nhập
+        </button>
+        <button type="button" class="auth-tab-btn" id="tab-auth-register-btn">
+          <i class="fa-solid fa-user-plus"></i> Đăng Ký Mới
+        </button>
+      </div>
+
+
+      <!-- PANE 1: ĐĂNG NHẬP (LOGIN) -->
+      <div id="pane-auth-login" class="auth-pane">
+
+        <form id="form-user-login">
+          <div class="form-group">
+            <label class="form-label" for="login-phone-input"><i class="fa-solid fa-user-circle"></i> Username hoặc Số
+              Điện Thoại</label>
+            <input type="text" id="login-phone-input" class="form-input" required
+              placeholder="Username hoặc Số Điện Thoại" autocomplete="username">
+          </div>
+
+          <div class="form-group">
+            <label class="form-label" for="login-pwd-input"><i class="fa-solid fa-lock"></i> Mật Khẩu</label>
+            <div class="pwd-input-wrap">
+              <input type="password" id="login-pwd-input" class="form-input" required placeholder="Nhập mật khẩu"
+                autocomplete="current-password">
+              <button type="button" class="pwd-toggle-btn" id="toggle-login-pwd-btn"><i
+                  class="fa-regular fa-eye"></i></button>
+            </div>
+          </div>
+
+          <div
+            style="display: flex; align-items: center; justify-content: space-between; margin: 0.8rem 0; font-size: 0.82rem; color: #94A3B8;">
+            <label style="display: flex; align-items: center; gap: 0.4rem; cursor: pointer;">
+              <input type="checkbox" id="login-remember-me" checked>
+              <span>Ghi nhớ đăng nhập</span>
+            </label>
+            <span style="color: #64748B;"></span>
+          </div>
+
+          <button type="submit" class="auth-submit-btn" id="btn-submit-login">
+            <i class="fa-solid fa-arrow-right-to-bracket"></i>
+            <span>Đăng Nhập Vào Hệ Thống</span>
+          </button>
+        </form>
+
+        <div class="auth-switch-link">
+          Chưa có tài khoản cá nhân? <a href="#" id="switch-to-register-link">Đăng ký thành viên mới &rarr;</a>
+        </div>
+      </div>
+
+      <!-- PANE 2: ĐĂNG KÝ (REGISTER - DUOLINGO STYLE) -->
+      <div id="pane-auth-register" class="auth-pane" style="display: none;">
+        <form id="form-user-register">
+          <!-- Avatar Selection Grid -->
+          <div class="avatar-picker-label">
+            <span><i class="fa-solid fa-masks-theater"></i> Chọn Avatar của bạn:</span>
+          </div>
+          <div class="avatar-picker-grid" id="reg-avatar-picker-grid">
+            <div class="avatar-pick-item selected" data-avatar="programmer_laptop" title="Kỹ Sư IT">
+              👨‍💻
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="woman_professional" title="Nữ Công Sở">
+              👩‍💼
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="doctor_health" title="Bác Sĩ Y Tế">
+              👨‍⚕️
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="sleep_owl" title="Cú Đêm Mavis">
+              🦉
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="zen_meditator" title="Thiền Định & Yoga">
+              🧘
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+            <div class="avatar-pick-item" data-avatar="nature_moon" title="Mặt Trăng Ban Đêm">
+              🌙
+              <span class="pick-check-badge"><i class="fa-solid fa-check"></i></span>
+            </div>
+          </div>
+          <input type="hidden" id="reg-avatar-input" value="programmer_laptop">
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="reg-fullname-input"><i class="fa-solid fa-user"></i> Họ và Tên</label>
+              <input type="text" id="reg-fullname-input" class="form-input" required placeholder="Ví dụ: Lê Minh Hoàng">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-phone-input"><i class="fa-solid fa-phone"></i> SĐT hoặc
+                Username</label>
+              <input type="text" id="reg-phone-input" class="form-input" required placeholder="0988 999 111 hoặc tên">
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="reg-pwd-input"><i class="fa-solid fa-lock"></i> Mật Khẩu</label>
+              <div class="pwd-input-wrap">
+                <input type="password" id="reg-pwd-input" class="form-input" required minlength="4"
+                  placeholder="••••••••" autocomplete="new-password">
+                <button type="button" class="pwd-toggle-btn" id="toggle-reg-pwd-btn"><i
+                    class="fa-regular fa-eye"></i></button>
+              </div>
+              <div class="password-strength-wrap">
+                <div class="strength-bar-track">
+                  <div class="strength-bar-fill" id="reg-strength-bar"></div>
+                </div>
+                <div class="strength-meta-row">
+                  <span>Độ mạnh mật khẩu:</span>
+                  <span id="reg-strength-text" style="font-weight: 700;">Nhập mật khẩu</span>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-role-input"><i class="fa-solid fa-briefcase"></i> Nghề Nghiệp</label>
+              <input type="text" id="reg-role-input" class="form-input" placeholder="Ví dụ: Kỹ sư / Bác sĩ / Tự do">
+            </div>
+          </div>
+
+          <div class="form-grid-2col">
+            <div class="form-group">
+              <label class="form-label" for="reg-age-input"><i class="fa-solid fa-cake-candles"></i> Tuổi & Giới
+                tính</label>
+              <input type="text" id="reg-age-input" class="form-input" placeholder="Ví dụ: 30 tuổi (Nam)">
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="reg-bedtime-input"><i class="fa-regular fa-clock"></i> Giờ Ngủ Mục
+                Tiêu</label>
+              <input type="time" id="reg-bedtime-input" class="form-input" value="23:00">
+            </div>
+          </div>
+
+          <button type="submit" class="auth-submit-btn auth-submit-register-prominent" id="btn-submit-register">
+            <i class="fa-solid fa-circle-check"></i>
+            <span>Xác Nhận Tạo Tài Khoản</span>
+          </button>
+        </form>
+
+        <div class="auth-switch-link">
+          Đã có tài khoản SleepSync? <a href="#" id="switch-to-login-link">&larr; Đăng nhập ngay</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========================================================
+       GLOBAL TOAST NOTIFICATION CONTAINER (DUOLINGO / FACEBOOK STYLE)
+       ======================================================== -->
+  <div id="app-toast-container" class="app-toast-container"></div>
+
+  <!-- ========================================================
+       CUSTOM CONFIRMATION MODAL (NO BROWSER ALERT / CONFIRM)
+       ======================================================== -->
+  <div id="app-confirm-modal" class="modal-overlay" style="display: none; z-index: 100010;">
+    <div class="modal-content glass-card app-confirm-dialog">
+      <div class="confirm-icon-circle confirm-icon-danger" id="confirm-modal-icon">
+        <i class="fa-solid fa-right-from-bracket"></i>
+      </div>
+      <h3 class="confirm-title" id="confirm-modal-title">Xác Nhận Đăng Xuất</h3>
+      <p class="confirm-message" id="confirm-modal-message">
+        Bạn có chắc chắn muốn đăng xuất khỏi tài khoản này? Mọi dữ liệu đã được lưu an toàn.
+      </p>
+      <div class="confirm-actions">
+        <button type="button" class="confirm-btn-cancel" id="btn-confirm-cancel">Ở lại</button>
+        <button type="button" class="confirm-btn-proceed confirm-btn-danger" id="btn-confirm-proceed">Đăng Xuất</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="ai-chatbot-window" class="ai-chatbot-window" role="dialog" aria-labelledby="floating-chat-title" hidden>
+    <div class="chatbot-header">
+      <div class="chatbot-title-box">
+        <div class="floating-mavis-avatar" aria-hidden="true">🌙<span class="chat-online-badge"></span></div>
+        <div class="mavis-header-identity">
+          <h4 class="chatbot-title" id="floating-chat-title">Mavis - Trợ Lý Giấc Ngủ</h4>
+          <span class="mavis-sparkle-pill">✨ Ban Đêm</span>
+          <div class="chatbot-user-sync-badge" id="chatbot-user-sync-badge"></div>
+        </div>
+      </div>
+      <div class="chatbot-header-actions">
+        <button type="button" id="clear-chat-btn" class="chat-header-btn" title="Làm mới hội thoại"
+          aria-label="Làm mới hội thoại"><i class="fa-solid fa-rotate-right"></i></button>
+        <button type="button" id="close-chatbot-btn" class="chat-header-btn" title="Đóng trợ lý"
+          aria-label="Đóng trợ lý"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+    <div class="chatbot-guardrail-banner"><i class="fa-solid fa-shield-halved"></i><span><strong>Chính sách y
+          tế:</strong> AI chỉ hướng dẫn giải pháp phi dược lý. Không kê đơn thuốc hay TPCN.</span></div>
+    <div id="chatbot-messages" class="floating-chat-transcript"></div>
+    <p id="chatbot-mic-status" class="floating-mic-status" role="status" aria-live="polite" hidden></p>
+    <div class="chatbot-quick-chips">
+      <button type="button" class="quick-chip" data-query="Tại sao tôi hay thức giấc lúc nửa đêm?">🌙 Thức giấc nửa
+        đêm</button>
+      <button type="button" class="quick-chip" data-query="Gợi ý bài tập giãn cơ cổ vai gáy trong 3 phút.">🦴 Giãn cơ cổ
+        vai gáy</button>
+      <button type="button" class="quick-chip" data-query="Tối nay nên ăn gì để hỗ trợ giấc ngủ?">🥗 Món tối dễ
+        ngủ</button>
+      <button type="button" class="quick-chip" data-query="Tôi muốn trao đổi về thuốc ngủ hoặc thực phẩm chức năng.">💊
+        Thuốc và TPCN</button>
+    </div>
+    <form id="chatbot-input-form" class="chatbot-input-bar">
+      <input id="chatbot-text-input" class="chatbot-text-input" aria-label="Tin nhắn cho Mavis"
+        placeholder="Hỏi AI về nhịp sinh học, giấc ngủ..." maxlength="12000" autocomplete="off">
+      <button type="button" id="chatbot-mic-btn" class="chatbot-btn-mic" title="Nhập tin nhắn bằng giọng nói"
+        aria-label="Nhập bằng giọng nói" aria-pressed="false"><i class="fa-solid fa-microphone"></i></button>
+      <button type="submit" id="chatbot-send-btn" class="chatbot-btn-send" title="Gửi tin nhắn"
+        aria-label="Gửi tin nhắn"><i class="fa-solid fa-paper-plane"></i></button>
+    </form>
+  </section>
+  <button type="button" id="floating-profile-fab" class="floating-profile-fab" title="Mở Mavis · Kéo để di chuyển"
+    aria-label="Mở trợ lý Mavis" aria-controls="ai-chatbot-window" aria-expanded="false">
+    <span class="fab-star-circle"><i class="fa-solid fa-star"></i></span><span class="fab-online-dot"></span>
+  </button>
+
+  <!-- Client Database Engine -->
+  <script src="db.js?v=5"></script>
+  <!-- Gemini client: text chat and real-time voice -->
+  <script src="rag.js?v=6"></script>
+  <!-- Main Javascript Logic -->
+  <script src="app.js?v=9"></script>
+  <script src="talk.js?v=12"></script>
+</body>
+
+</html>

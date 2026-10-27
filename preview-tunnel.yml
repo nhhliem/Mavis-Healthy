@@ -1,0 +1,3 @@
+# Isolated config: do not inherit other local Cloudflare tunnel routes.
+no-autoupdate: true
+protocol: http2

@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+*$py.class
+cloudflared.exe
+.env
+.DS_Store
+Thumbs.db
+*.log
+.playwright-mcp/
+*.db
+*.db-wal
+*.db-shm
+public_url.txt
