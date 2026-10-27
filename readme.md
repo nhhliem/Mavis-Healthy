@@ -33,49 +33,5 @@ Hệ thống AI ứng dụng nguyên lý **Khoa học thần kinh (Neuroscience)
 
 ---
 
-## ⚡ Các Tính Năng Đột Phá Mới
 
-### 1. 2 Chế Độ Thu Thập Dữ Liệu Linh Hoạt
-- **Trắc nghiệm 5 bước chuẩn y khoa (5-Pillar Quiz Wizard)**: Giao diện trực quan với các phương án lựa chọn phân tầng rõ ràng.
-- **Trò chuyện giọng nói với AI (AI Voice Talk Mode)**: Trợ lý AI hỏi tuần tự từng yếu tố; bạn có thể bấm mic nói tự nhiên hoặc click vào các câu trả lời gợi ý.
-- **Nút "Thử Nhanh Trường Hợp Mẫu (Demo)"**: Tự động điền dữ liệu thực tế của một nhân viên văn phòng bận rộn để xem ngay kết quả.
-
-### 2. 🕒 Lời Khuyên Theo Thời Gian Thực (Real-time Chronotherapy)
-- Hệ thống tự động đọc giờ thực tế của máy bạn:
-  - **Sáng**: Chốt cữ cà phê cuối cùng trước 11:00, uống nước bù khoáng.
-  - **Trưa**: Hướng dẫn ăn trưa chống đầy bụng, đi dạo 5 phút chống trào ngược, ngủ trưa không quá 25 phút.
-  - **Chiều**: Bài tập xoay cổ vai gáy 3 phút tại bàn làm việc, dừng hoàn toàn caffeine.
-  - **Hoàng hôn**: Đi bộ 15 phút đón ánh sáng đỏ đồng bộ nhịp sinh học.
-  - **Tối**: Kích hoạt Digital Sunset, tắm nước ấm 10 phút, điều chỉnh điều hòa 24-26°C.
-
-### 3. 📅 Quét Lịch Trình Công Việc & Vi-Hành Động 2-5 Phút
-- Cho phép xem lịch bận, thêm sự kiện hoặc **tải file `.ics` từ Google Calendar / Outlook**.
-- AI tự động tìm các khe trống (Free Slots) giữa các cuộc họp để xếp lịch các **vi-hành động siêu dễ làm**:
-  - Không tốn thời gian, không đòi hỏi dụng cụ phức tạp.
-  - Chỉ mất 1-5 phút ngay tại bàn làm việc hoặc sau bữa ăn.
-
-### 4. 🥗 Thực Đơn Nấu Nhanh Dưới 10 Phút & Giải Pháp Đặc Trị
-- Thực đơn tối nhanh: Trứng luộc lòng đào (giàu melatonin), canh rau bina luộc (giàu magie), 1-2 quả kiwi / chuối.
-- Giải pháp trào ngược GERD: Nguyên tắc 3 tiếng, tư thế nằm nghiêng bên trái, kê cao gối 15cm.
-- Giải pháp đau cổ vai gáy: Động tác Chin-Tuck 1 phút và mở ngực.
-- Giải pháp tiểu đêm: Kỹ thuật đi tiểu kép (Double Voiding) và ngừng uống nước sau 20:00.
-
-### 5. 🎧 Web Audio API Soundscape Player & Xuất Lịch (.ics)
-- Phát trực tiếp sóng não Delta 4Hz, tiếng mưa rào Pink Noise, sóng biển đêm và chuông xoay thiền Tây Tạng 432Hz.
-- Xuất toàn bộ vi-hành động sang file `.ics` để đồng bộ vào điện thoại kèm chuông nhắc trước 10 phút.
-
----
-
-## 🚀 Hướng Dẫn Truy Cập Ứng Dụng
-
-### 1. Máy tính hiện tại (Localhost)
-👉 **[http://localhost:8766/](http://localhost:8766/)**
-
-### 2. Điện thoại (4G/5G) & Máy tính bên ngoài (Internet)
-- Khởi chạy bằng cách nhấp đúp file: [`start_share.bat`](file:///c:/Users/LIEM'S/Desktop/Chucbanngungon-main/start_share.bat) hoặc lệnh `python share.py`.
-- Tự động cấp link HTTPS bảo mật (đầy đủ quyền Micro AI Voice & Web Audio cho điện thoại).
-- Đang mở trực tiếp: **[https://plays-breed-ordinance-duo.trycloudflare.com](https://plays-breed-ordinance-duo.trycloudflare.com)**
-
-### 3. Thiết bị trong cùng mạng Wi-Fi (LAN)
-- Địa chỉ IP máy bạn: **`http://192.168.1.25:8766`** (điện thoại bắt cùng mạng Wi-Fi).
 
